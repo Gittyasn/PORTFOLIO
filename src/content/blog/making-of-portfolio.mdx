@@ -1,0 +1,81 @@
+export const metadata = {
+  title: "Building a Premium Developer Portfolio",
+  date: "August 10, 2026",
+  description: "An in-depth look at the design decisions, technology stack, and animations that make a premium developer portfolio stand out.",
+  coverImage: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+  tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
+};
+
+# Building a Premium Developer Portfolio
+
+Creating a personal website is a rite of passage for every developer. It's not just a resume; it's a living sandbox where you demonstrate your technical skills, layout sensibilities, and attention to detail.
+
+In this article, I want to walk through the architecture and design decisions behind my new portfolio website.
+
+---
+
+## The Stack
+
+For this iteration, I chose a modern, high-performance stack:
+
+1. **Core:** Next.js (App Router) + TypeScript
+2. **Styling:** Tailwind CSS v4
+3. **Animations:** Framer Motion
+4. **Content:** MDX (Markdown with JSX)
+5. **Theming:** next-themes (supporting Light/Dark modes)
+
+---
+
+## Design System & Theming
+
+A premium aesthetic requires careful color design. Instead of default Tailwind gray, I chose a zinc and slate palette with custom rose accents (`--primary`). 
+
+In Tailwind v4, we can define our light/dark modes directly in `globals.css` using standard CSS custom properties:
+
+```css
+:root {
+  --background: #fafafa;
+  --foreground: #18181b;
+  --primary: #e11d48;
+}
+
+.dark {
+  --background: #030303;
+  --foreground: #f4f4f5;
+  --primary: #f43f5e;
+}
+```
+
+This lets Next-themes toggle modes simply by applying the `.dark` class to the `html` element. Utility classes like `bg-background` and `text-foreground` automatically inherit the transition!
+
+---
+
+## Seamless Motion
+
+Animations are what separates a static page from an engaging, alive user experience. Using **Framer Motion**, we implement:
+
+* **Staggered Reveals:** Making items in timelines and grids slide up sequentially.
+* **Layout Transitions:** Animating navigation indicators smoothly when shifting pages.
+* **Glow Cards:** Subtle shadows glowing and expanding on hover.
+
+Here is a snippet showing how we stagger item reveals:
+
+```tsx
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+```
+
+---
+
+## Wrapping Up
+
+A great portfolio is always a work in progress. In the next few weeks, I plan to integrate a database for analytics and expand my case studies.
+
+What do you think of this setup? Feel free to reach out via the contact form!
