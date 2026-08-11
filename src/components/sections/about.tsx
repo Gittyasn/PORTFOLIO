@@ -76,7 +76,7 @@ export function About() {
               <div className="relative w-full h-full rounded-3xl border border-border bg-card p-2 shadow-xl overflow-hidden">
                 <div className="w-full h-full rounded-2xl overflow-hidden relative">
                   <Image
-                    src="/profile.png"
+                    src="/yaswanth.jpg"
                     alt="Yaswanth Profile"
                     fill
                     sizes="(max-width: 768px) 256px, 320px"
