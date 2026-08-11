@@ -6,42 +6,32 @@ import { Monitor, Server, Cloud, Hammer, CheckCircle2 } from "lucide-react";
 
 const skillGroups = [
   {
-    title: "Frontend Development",
+    title: "Programming Languages",
     icon: Monitor,
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Bootstrap", "Responsive Design"],
+    skills: ["C", "C++", "Python", "Java (Basic)"],
     color: "text-blue-500",
   },
   {
-    title: "Backend Development",
+    title: "Web Technologies",
     icon: Server,
-    skills: ["Node.js", "Express.js", "Python", "MongoDB", "PostgreSQL", "GraphQL"],
+    skills: ["HTML5", "CSS3", "Bootstrap", "JavaScript", "React.js", "Node.js", "Express.js"],
     color: "text-green-500",
   },
   {
-    title: "Cloud & DevOps",
-    icon: Cloud,
-    skills: ["AWS", "Render", "Git/GitHub", "Vercel", "Netlify", "CI/CD"],
-    color: "text-purple-500",
-  },
-  {
-    title: "Tools & Others",
+    title: "Databases & Developer Tools",
     icon: Hammer,
-    skills: ["VS Code", "PowerBI", "Postman", "Jest", "Webpack", "ESLint"],
-    color: "text-amber-500",
+    skills: ["MongoDB", "SQL", "Supabase", "VS Code", "Git", "GitHub"],
+    color: "text-purple-500",
   },
 ];
 
 const additionalSkills = [
-  "Agile Methodologies",
-  "RESTful APIs",
-  "Microservices",
-  "Test-Driven Development (TDD)",
-  "Performance Optimization",
-  "Web-Security Best Practices",
-  "Cross-browser Compatibility",
-  "Mobile-First Design",
-  "SEO Optimization",
-  "Accessibility (a11y) Standards",
+  "Team Management",
+  "Leadership",
+  "Problem Solving",
+  "Adaptability",
+  "Data Analysis",
+  "AI Automation",
 ];
 
 export function Skills() {

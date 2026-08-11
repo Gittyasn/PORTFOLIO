@@ -37,3 +37,50 @@ This document lists the required technology stack and tools for our project, det
 * **next/font**: Layout-shift-free font loading, locally caching and serving custom Google fonts.
 * **Metadata API**: SEO management, defining static and dynamic page titles, descriptions, and OpenGraph/social preview tags.
 * **Vercel Analytics & Speed Insights**: Real-time website visitor tracking, loading speeds, and Core Web Vitals profiling.
+
+Final Recommended Stack (v1.0)
+
+Core
+ 
+✅ Next.js
+✅ React
+✅ TypeScript
+✅ Tailwind CSS
+✅ Framer Motion
+
+Content
+
+✅ MDX
+
+UI
+
+✅ Lucide React
+✅ next-themes
+
+Forms
+
+✅ React Hook Form
+✅ Zod
+✅ EmailJS or Resend
+
+Code Quality
+
+✅ ESLint
+✅ Prettier
+
+Development
+
+✅ Git
+✅ GitHub
+
+Deployment
+
+✅ Vercel
+
+Performance
+
+✅ next/image
+✅ next/font
+✅ Metadata API
+✅ Vercel Analytics
+✅ Speed Insights

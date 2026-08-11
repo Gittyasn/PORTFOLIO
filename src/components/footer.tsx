@@ -24,7 +24,7 @@ export function Footer() {
           {/* Brand Info */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold tracking-tight bg-gradient-to-r from-primary to-rose-400 bg-clip-text text-transparent">
-              Yaswanth
+              Bandaru Yaswanth
             </h3>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
               Passionate developer dedicated to engineering sleek web experiences and creating high-performance software.
@@ -83,11 +83,11 @@ export function Footer() {
             </h4>
             <div className="space-y-2 text-sm text-muted-foreground">
               <a
-                href="mailto:vamsi.rangumudri.dev@gmail.com"
+                href="mailto:bandaruyaswanth7@gmail.com"
                 className="flex items-center gap-2 hover:text-primary transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                vamsi.rangumudri.dev@gmail.com
+                bandaruyaswanth7@gmail.com
               </a>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
@@ -98,7 +98,7 @@ export function Footer() {
             {/* Social Icons */}
             <div className="flex items-center space-x-4 pt-2">
               <a
-                href="https://github.com/vamsipaul1"
+                href="https://github.com/Gittyasn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-xl border border-border/40 hover:bg-muted/70 hover:text-primary transition-all duration-350 hover:scale-105"
@@ -107,7 +107,7 @@ export function Footer() {
                 <Github className="w-4 h-4" />
               </a>
               <a
-                href="https://www.linkedin.com/in/vamsi-rangumudri"
+                href="https://www.linkedin.com/in/yaswanth-bandaru-98912b"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-xl border border-border/40 hover:bg-muted/70 hover:text-primary transition-all duration-350 hover:scale-105"
@@ -121,7 +121,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border/20 flex flex-col sm:flex-row items-center justify-between text-xs text-muted-foreground gap-4">
-          <p>© {currentYear} Yaswanth. All rights reserved.</p>
+          <p>© {currentYear} Bandaru Yaswanth. All rights reserved.</p>
           <p className="flex items-center gap-1.5">
             Designed with <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 animate-pulse" /> using Next.js & Tailwind
           </p>

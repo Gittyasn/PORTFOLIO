@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yaswanth | Full Stack Developer",
+  title: "Bandaru Yaswanth | Developer & Data Analyst",
   description:
-    "Personal portfolio of Yaswanth, a passionate full stack developer specialized in React, Next.js, and modern web technologies.",
+    "Personal portfolio of Bandaru Yaswanth, a Computer Science student skilled in Full-Stack Development, Data Science, and AI automation.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

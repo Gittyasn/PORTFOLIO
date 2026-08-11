@@ -147,7 +147,7 @@ export function Hero() {
             className="flex items-center justify-center space-x-5 pt-8"
           >
             <a
-              href="https://github.com/vamsipaul1"
+              href="https://github.com/Gittyasn"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-card border border-border/80 rounded-2xl text-muted-foreground hover:text-primary hover:border-primary/40 hover:scale-110 transition-all shadow-sm"
@@ -156,7 +156,7 @@ export function Hero() {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/vamsi-rangumudri"
+              href="https://www.linkedin.com/in/yaswanth-bandaru-98912b"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-card border border-border/80 rounded-2xl text-muted-foreground hover:text-primary hover:border-primary/40 hover:scale-110 transition-all shadow-sm"
@@ -165,7 +165,7 @@ export function Hero() {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:vamsi.rangumudri.dev@gmail.com"
+              href="mailto:bandaruyaswanth7@gmail.com"
               className="p-3 bg-card border border-border/80 rounded-2xl text-muted-foreground hover:text-primary hover:border-primary/40 hover:scale-110 transition-all shadow-sm"
               aria-label="Email"
             >
