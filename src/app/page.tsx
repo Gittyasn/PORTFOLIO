@@ -13,15 +13,25 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex-grow pt-16">
-        <Hero />
-        <About />
-        <Projects />
-        <Education />
-        <Experience />
-        <Certifications />
-        <Skills />
-        <Contact />
+      <main className="flex-grow pt-16 relative overflow-hidden bg-dot-pattern">
+        {/* Animated Backdrop Bubbles */}
+        <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+          <div className="absolute top-[10%] left-[5%] w-96 h-96 rounded-full bg-primary/4 blur-3xl bubble-float-1" />
+          <div className="absolute top-[35%] right-[5%] w-[450px] h-[450px] rounded-full bg-rose-400/3 blur-3xl bubble-float-2" />
+          <div className="absolute bottom-[20%] left-[10%] w-[400px] h-[400px] rounded-full bg-primary/3 blur-3xl bubble-float-3" />
+        </div>
+
+        {/* Scrollable Content */}
+        <div className="relative z-10">
+          <Hero />
+          <About />
+          <Projects />
+          <Education />
+          <Experience />
+          <Certifications />
+          <Skills />
+          <Contact />
+        </div>
       </main>
       <Footer />
     </>

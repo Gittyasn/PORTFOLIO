@@ -41,9 +41,8 @@ const certificationsData = [
 
 export function Certifications() {
   return (
-    <section id="certifications" className="py-20 relative overflow-hidden bg-grid-pattern bg-muted/10">
-      <div className="absolute inset-0 glow-radial-rose pointer-events-none" />
-      <div className="container mx-auto px-4 md:px-8 max-w-6xl">
+    <section id="certifications" className="py-20 relative overflow-hidden bg-transparent">
+      <div className="container mx-auto px-4 md:px-10 max-w-7xl">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
           <motion.h2

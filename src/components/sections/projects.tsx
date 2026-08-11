@@ -83,9 +83,9 @@ export function Projects() {
   });
 
   return (
-    <section id="projects" className="py-20 relative overflow-hidden bg-dot-pattern">
-      <div className="absolute inset-0 glow-radial-rose pointer-events-none" />
-      <div className="container mx-auto px-4 md:px-8 max-w-6xl">
+    <section id="projects" className="py-20 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/2 to-transparent pointer-events-none" />
+      <div className="container mx-auto px-4 md:px-10 max-w-7xl">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
           <motion.h2

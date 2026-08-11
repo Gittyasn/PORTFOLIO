@@ -57,10 +57,9 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden py-20 bg-dot-pattern"
+      className="relative min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden py-20 bg-transparent"
     >
       {/* Background Decorative Blobs */}
-      <div className="absolute inset-0 glow-radial-rose pointer-events-none" />
       <div className="absolute top-20 left-10 w-44 h-44 rounded-full bg-primary/5 blur-3xl floating-element" />
       <div className="absolute bottom-20 right-10 w-60 h-60 rounded-full bg-rose-400/5 blur-3xl floating-element-delayed" />
 

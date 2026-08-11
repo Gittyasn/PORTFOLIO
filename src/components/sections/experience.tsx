@@ -37,14 +37,13 @@ export function Experience() {
   return (
     <section
       id="internships"
-      className="py-20 bg-muted/10 relative overflow-hidden bg-dot-pattern"
+      className="py-20 bg-transparent relative overflow-hidden"
     >
       {/* Decorative Blobs */}
-      <div className="absolute inset-0 glow-radial-rose pointer-events-none" />
       <div className="absolute top-20 left-10 w-44 h-44 rounded-full bg-primary/5 blur-3xl floating-element" />
       <div className="absolute bottom-20 right-10 w-60 h-60 rounded-full bg-rose-400/5 blur-3xl floating-element-delayed" />
 
-      <div className="container mx-auto px-4 md:px-8 max-w-5xl">
+      <div className="container mx-auto px-4 md:px-10 max-w-7xl">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
           <motion.h2
