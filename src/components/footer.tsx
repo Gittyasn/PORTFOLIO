@@ -66,6 +66,15 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  href="#education"
+                  onClick={(e) => handleNavClick(e, "education")}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Education
+                </a>
+              </li>
+              <li>
+                <a
                   href="#contact"
                   onClick={(e) => handleNavClick(e, "contact")}
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -83,11 +92,11 @@ export function Footer() {
             </h4>
             <div className="space-y-2 text-sm text-muted-foreground">
               <a
-                href="mailto:bandaruyaswanth7@gmail.com"
+                href="mailto:yaswanthbandaruu@gmail.com"
                 className="flex items-center gap-2 hover:text-primary transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                bandaruyaswanth7@gmail.com
+                yaswanthbandaruu@gmail.com
               </a>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />

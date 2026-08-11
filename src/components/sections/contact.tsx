@@ -236,7 +236,7 @@ export function Contact() {
               
               {/* Email details */}
               <a
-                href="mailto:bandaruyaswanth7@gmail.com"
+                href="mailto:yaswanthbandaruu@gmail.com"
                 className="flex items-center gap-4 bg-card border border-border p-5 rounded-2xl shadow-sm hover:border-primary/45 transition-colors group"
               >
                 <div className="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
@@ -244,7 +244,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-xs uppercase tracking-wider text-muted-foreground">Email</h4>
-                  <p className="text-sm font-semibold text-foreground/90 break-all">bandaruyaswanth7@gmail.com</p>
+                  <p className="text-sm font-semibold text-foreground/90 break-all">yaswanthbandaruu@gmail.com</p>
                 </div>
               </a>
 

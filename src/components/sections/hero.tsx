@@ -87,7 +87,7 @@ export function Hero() {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight"
           >
-            Yaswanth
+            Yaswanth Bandaru
           </motion.h1>
 
           {/* Typewriter Role */}
@@ -165,7 +165,7 @@ export function Hero() {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:bandaruyaswanth7@gmail.com"
+              href="mailto:yaswanthbandaruu@gmail.com"
               className="p-3 bg-card border border-border/80 rounded-2xl text-muted-foreground hover:text-primary hover:border-primary/40 hover:scale-110 transition-all shadow-sm"
               aria-label="Email"
             >

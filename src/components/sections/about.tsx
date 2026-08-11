@@ -113,58 +113,6 @@ export function About() {
           </motion.div>
         </div>
 
-        {/* Education History */}
-        <div className="mt-20">
-          <motion.h3
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-xl md:text-2xl font-bold mb-8 text-center lg:text-left text-foreground/90"
-          >
-            Education History
-          </motion.h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="bg-card border border-border/80 p-6 rounded-3xl shadow-sm hover:border-primary/30 transition-all duration-300"
-            >
-              <span className="text-xs font-bold text-primary">2022 - 2026</span>
-              <h4 className="font-extrabold text-base mt-2 text-foreground/95">B.Tech in Computer Science</h4>
-              <p className="text-xs text-muted-foreground mt-1">Baba Institute Of Technology And Sciences</p>
-              <p className="text-xs text-primary font-bold mt-4">Percentage: 72.02%</p>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="bg-card border border-border/80 p-6 rounded-3xl shadow-sm hover:border-primary/30 transition-all duration-300"
-            >
-              <span className="text-xs font-bold text-primary">2019 - 2021</span>
-              <h4 className="font-extrabold text-base mt-2 text-foreground/95">Intermediate (MPC)</h4>
-              <p className="text-xs text-muted-foreground mt-1">Sri Chaitanya Junior College</p>
-              <p className="text-xs text-primary font-bold mt-4">Percentage: 91.02%</p>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              className="bg-card border border-border/80 p-6 rounded-3xl shadow-sm hover:border-primary/30 transition-all duration-300"
-            >
-              <span className="text-xs font-bold text-primary">2018 - 2019</span>
-              <h4 className="font-extrabold text-base mt-2 text-foreground/95">SSC</h4>
-              <p className="text-xs text-muted-foreground mt-1">Saraswathi Vidya Vihar</p>
-              <p className="text-xs text-primary font-bold mt-4">Percentage: 98.00%</p>
-            </motion.div>
-          </div>
-        </div>
-
         {/* Highlights Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
           {cards.map((card, index) => {
