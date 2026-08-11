@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
 import { Menu, X, Sun, Moon, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -20,10 +21,15 @@ const navItems = [
 export function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
-  const { theme, setTheme } = useTheme();
+  const { theme, resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
   const [activeSection, setActiveSection] = React.useState("home");
   const [scrolled, setScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Scroll handler to add background blur/shadow when scrolling down
   React.useEffect(() => {
@@ -96,14 +102,15 @@ export function Navbar() {
         <a
           href="#home"
           onClick={(e) => handleNavClick(e, "#home")}
-          className="flex items-center space-x-2 group"
+          className="flex items-center group"
         >
-          <div className="w-9 h-9 bg-gradient-to-tr from-primary to-rose-400 rounded-xl flex items-center justify-center shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform duration-300">
-            <Sparkles className="w-5 h-5 text-white" />
-          </div>
-          <span className="font-bold text-lg md:text-xl tracking-tight bg-gradient-to-r from-foreground via-foreground/90 to-primary bg-clip-text text-transparent group-hover:to-rose-400 transition-all duration-300">
-            Yaswanth
-          </span>
+          <Image
+            src="/logo.jpg"
+            alt="Portfolio Logo"
+            width={120}
+            height={32}
+            className="h-8 w-auto object-contain group-hover:scale-[1.02] transition-transform duration-300 rounded-lg"
+          />
         </a>
 
         {/* Desktop Navigation */}
@@ -151,12 +158,19 @@ export function Navbar() {
         <div className="flex items-center space-x-3">
           {/* Theme Toggle */}
           <button
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="p-2.5 rounded-xl border border-border/60 hover:bg-muted/65 transition-colors cursor-pointer"
+            onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+            className="w-[38px] h-[38px] rounded-xl border border-border/60 hover:bg-muted/65 transition-colors cursor-pointer flex items-center justify-center"
             aria-label="Toggle Theme"
           >
-            <Sun className="w-4 h-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-amber-500" />
-            <Moon className="absolute w-4 h-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 text-rose-400 top-[15px]" />
+            {mounted ? (
+              resolvedTheme === "dark" ? (
+                <Moon className="w-4.5 h-4.5 text-rose-400" />
+              ) : (
+                <Sun className="w-4.5 h-4.5 text-amber-500" />
+              )
+            ) : (
+              <div className="w-4.5 h-4.5" />
+            )}
           </button>
 
           {/* Mobile Menu Trigger */}

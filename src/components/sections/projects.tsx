@@ -213,7 +213,7 @@ export function Projects() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="text-center mt-12 text-sm text-muted-foreground"
         >
-          🚀 More exciting projects under active development! Stay tuned.
+          More exciting projects under active development! Stay tuned.
         </motion.div>
       </div>
     </section>
