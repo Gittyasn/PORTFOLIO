@@ -123,7 +123,8 @@ export function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
           >
             <a
-              href="#"
+              href="/yaswanth-resume.pdf"
+              download="Yaswanth_Bandaru_Resume.pdf"
               className="flex items-center gap-2 px-7 py-3.5 bg-primary hover:bg-primary-hover text-primary-foreground rounded-2xl font-semibold shadow-lg shadow-primary/20 hover:shadow-xl hover:scale-[1.02] transition-all cursor-pointer"
             >
               <Download className="w-4 h-4" />

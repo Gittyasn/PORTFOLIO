@@ -151,13 +151,17 @@ export function Projects() {
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-3">
-                    <a
-                      href={project.demo}
-                      className="p-3 bg-white/95 rounded-full text-zinc-900 hover:bg-primary hover:text-primary-foreground transition-all duration-200 transform scale-90 group-hover:scale-100"
-                      aria-label="View demo"
-                    >
-                      <Eye className="w-5 h-5" />
-                    </a>
+                    {project.demo !== "#" && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-3 bg-white/95 rounded-full text-zinc-900 hover:bg-primary hover:text-primary-foreground transition-all duration-200 transform scale-90 group-hover:scale-100"
+                        aria-label="View demo"
+                      >
+                        <Eye className="w-5 h-5" />
+                      </a>
+                    )}
                     <a
                       href={project.github}
                       target="_blank"

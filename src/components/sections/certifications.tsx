@@ -11,7 +11,7 @@ const certificationsData = [
     date: "August 2024",
     skills: ["React.js", "Node.js", "Express.js", "MongoDB", "MERN Stack"],
     id: "XC-FS-2024",
-    link: "#",
+    link: "https://github.com/Gittyasn",
   },
   {
     title: "Data Analysis Using Python",
@@ -19,7 +19,7 @@ const certificationsData = [
     date: "July 2025",
     skills: ["Python", "Pandas", "Matplotlib", "Seaborn", "Exploratory Data Analysis"],
     id: "AP-DA-2025",
-    link: "#",
+    link: "https://github.com/Gittyasn",
   },
   {
     title: "Data Science Certification",
@@ -27,7 +27,7 @@ const certificationsData = [
     date: "2024",
     skills: ["Data Science", "Python", "Machine Learning", "Statistics"],
     id: "AD-DS-2024",
-    link: "#",
+    link: "https://github.com/Gittyasn",
   },
   {
     title: "LinkedIn Learning Certificates",
@@ -35,7 +35,7 @@ const certificationsData = [
     date: "2024",
     skills: ["Software Engineering Foundations", "Professional Communication", "Problem Solving"],
     id: "LI-CERT-2024",
-    link: "#",
+    link: "https://www.linkedin.com/in/yaswanth-bandaru-98912b",
   },
 ];
 
@@ -140,6 +140,8 @@ export function Certifications() {
                 )}
                 <a
                   href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-1.5 text-primary hover:text-primary-hover font-bold tracking-tight transition-colors cursor-pointer"
                 >
                   Verify Certificate

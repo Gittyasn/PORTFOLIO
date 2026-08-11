@@ -7,7 +7,7 @@ import { getAllPosts } from "@/lib/blog";
 import { Calendar, ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Blog | Vamsi Rangumudri",
+  title: "Blog | Yaswanth Bandaru",
   description: "Technical articles, design decisions, and tutorials on modern full-stack web engineering.",
 };
 
