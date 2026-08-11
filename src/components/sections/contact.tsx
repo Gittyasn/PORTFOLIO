@@ -39,9 +39,40 @@ export function Contact() {
 
   const onSubmit = async (data: ContactFormValues) => {
     setIsSubmitting(true);
-    // Simulate API request
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+      if (serviceId && templateId && publicKey) {
+        // Send actual email using EmailJS REST API
+        const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            service_id: serviceId,
+            template_id: templateId,
+            user_id: publicKey,
+            template_params: {
+              from_name: data.name,
+              from_email: data.email,
+              subject: data.subject,
+              message: data.message,
+              to_name: "Yaswanth Bandaru",
+            },
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error("Failed to send message via EmailJS");
+        }
+      } else {
+        // Fallback simulation when keys are not defined
+        await new Promise((resolve) => setTimeout(resolve, 1200));
+      }
+
       setIsSubmitting(false);
       setSubmitSuccess(true);
       
@@ -57,6 +88,7 @@ export function Contact() {
       // Hide success message after 5 seconds
       setTimeout(() => setSubmitSuccess(false), 5000);
     } catch (e) {
+      console.error("EmailJS Error:", e);
       setIsSubmitting(false);
     }
   };

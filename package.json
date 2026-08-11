@@ -13,6 +13,8 @@
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.1",
     "@next/mdx": "^16.3.0",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "canvas-confetti": "^1.9.4",
     "framer-motion": "^13.1.0",
     "lucide-react": "^1.31.0",
