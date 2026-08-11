@@ -38,9 +38,10 @@ export function Skills() {
   return (
     <section
       id="skills"
-      className="py-20 bg-muted/10 relative overflow-hidden"
+      className="py-20 bg-muted/10 relative overflow-hidden bg-dot-pattern"
     >
       {/* Decorative Blobs */}
+      <div className="absolute inset-0 glow-radial-rose pointer-events-none" />
       <div className="absolute top-20 right-10 w-44 h-44 rounded-full bg-primary/5 blur-3xl floating-element" />
       <div className="absolute bottom-20 left-10 w-60 h-60 rounded-full bg-rose-400/5 blur-3xl floating-element-delayed" />
 
