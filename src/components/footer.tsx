@@ -83,7 +83,7 @@ export function Footer() {
           </div>
 
           {/* Copyright Info */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-zinc-500 text-xs pt-2.5 border-t border-zinc-900/50 max-w-2xl mx-auto !mt-3">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-zinc-500 text-xs max-w-2xl mx-auto !mt-2">
             <p>© {currentYear} Bandaru Yaswanth. All rights reserved.</p>
             <span className="hidden sm:inline text-zinc-700">•</span>
             <p className="flex items-center gap-1.5">
