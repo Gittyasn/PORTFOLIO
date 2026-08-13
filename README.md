@@ -185,7 +185,7 @@ This project is open source and available under the MIT License.
 
 ---
 
-## 🤝 Connect with Me
+##  Connect with Me
 
 - GitHub: https://github.com/Gittyasn
 - LinkedIn: https://www.linkedin.com/in/yaswanth-bandaru-98912b
