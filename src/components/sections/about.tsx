@@ -35,9 +35,9 @@ export function About() {
       className="py-20 bg-muted/5 bg-grid-pattern relative overflow-hidden border-b border-border/20"
     >
       {/* Decorative Blobs */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(244,63,94,0.06)_0%,transparent_60%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.06)_0%,transparent_60%)] pointer-events-none" />
       <div className="absolute top-20 right-10 w-52 h-52 rounded-full bg-primary/5 blur-3xl floating-element" />
-      <div className="absolute bottom-20 left-10 w-40 h-40 rounded-full bg-rose-400/5 blur-3xl floating-element-delayed" />
+      <div className="absolute bottom-20 left-10 w-40 h-40 rounded-full bg-sky-400/5 blur-3xl floating-element-delayed" />
 
       <div className="container mx-auto px-4 md:px-10 max-w-7xl">
         {/* Section Header */}
@@ -73,7 +73,7 @@ export function About() {
             className="lg:col-span-5 flex justify-center"
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 group">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary to-rose-500 rounded-3xl blur-md opacity-25 group-hover:opacity-40 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary to-sky-400 rounded-3xl blur-md opacity-25 group-hover:opacity-40 transition-opacity duration-300" />
               <div className="relative w-full h-full rounded-3xl border border-border bg-card p-2 shadow-xl overflow-hidden">
                 <div className="w-full h-full rounded-2xl overflow-hidden relative">
                   <Image

@@ -31,7 +31,7 @@ const experienceData = [
       "Strengthened core Python skills through analysis scripts, plotting libraries, and data exercises."
     ],
     emoji: "📈",
-    color: "bg-rose-600 text-white shadow-rose-500/20"
+    color: "bg-sky-600 text-white shadow-sky-500/20"
   },
   {
     company: "XCEEDIQ",
@@ -118,7 +118,7 @@ export function Experience() {
                         <h3 className="font-extrabold text-lg md:text-xl text-zinc-900">
                           {item.company}
                         </h3>
-                        <p className="text-sm font-semibold text-rose-600">{item.role}</p>
+                        <p className="text-sm font-semibold text-primary">{item.role}</p>
                       </div>
                     </div>
                   </div>
@@ -144,12 +144,12 @@ export function Experience() {
                   {/* Achievements Checklist */}
                   <div className="space-y-3">
                     <h4 className="text-xs md:text-sm font-bold text-zinc-800 flex items-center gap-2">
-                      <Award className="w-4 h-4 text-rose-500" /> Key Achievements:
+                      <Award className="w-4 h-4 text-primary" /> Key Achievements:
                     </h4>
                     <ul className="space-y-2.5 text-xs md:text-sm">
                       {item.achievements.map((ach, idx) => (
                         <li key={idx} className="flex items-start gap-2.5 text-zinc-600">
-                          <span className="w-1.5 h-1.5 rounded-full bg-rose-500 mt-2 flex-shrink-0" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                           <span className="leading-relaxed">{ach}</span>
                         </li>
                       ))}

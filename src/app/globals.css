@@ -7,8 +7,8 @@
   --card: #ffffff;
   --card-foreground: #18181b;
   
-  --primary: #e11d48; /* rose-600 */
-  --primary-hover: #be123c; /* rose-700 */
+  --primary: #0ea5e9; /* sky-500 */
+  --primary-hover: #0284c7; /* sky-600 */
   --primary-foreground: #ffffff;
   
   --muted: #f4f4f5;
@@ -16,7 +16,7 @@
   
   --border: #e4e4e7;
   
-  --glow-color: rgba(225, 29, 72, 0.08);
+  --glow-color: rgba(14, 165, 233, 0.08);
 }
 
 .dark {
@@ -26,8 +26,8 @@
   --card: #09090b;
   --card-foreground: #f4f4f5;
   
-  --primary: #f43f5e; /* rose-500 */
-  --primary-hover: #fb7185; /* rose-400 */
+  --primary: #38bdf8; /* sky-400 */
+  --primary-hover: #7dd3fc; /* sky-300 */
   --primary-foreground: #09090b;
   
   --muted: #18181b;
@@ -35,7 +35,7 @@
   
   --border: #27272a;
   
-  --glow-color: rgba(244, 63, 94, 0.15);
+  --glow-color: rgba(56, 189, 248, 0.15);
 }
 
 @theme inline {

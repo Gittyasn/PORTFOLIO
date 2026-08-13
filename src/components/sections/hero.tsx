@@ -60,9 +60,9 @@ export function Hero() {
       className="relative min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden py-20 bg-background bg-dot-pattern border-b border-border/20"
     >
       {/* Background Decorative Blobs */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(244,63,94,0.08)_0%,transparent_70%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(14,165,233,0.08)_0%,transparent_70%)] pointer-events-none" />
       <div className="absolute top-20 left-10 w-44 h-44 rounded-full bg-primary/5 blur-3xl floating-element" />
-      <div className="absolute bottom-20 right-10 w-60 h-60 rounded-full bg-rose-400/5 blur-3xl floating-element-delayed" />
+      <div className="absolute bottom-20 right-10 w-60 h-60 rounded-full bg-sky-400/5 blur-3xl floating-element-delayed" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10 flex flex-col items-center justify-center text-center">
         <motion.div
