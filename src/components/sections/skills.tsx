@@ -2,26 +2,139 @@
 
 import * as React from "react";
 import { motion } from "framer-motion";
-import { Monitor, Server, Cloud, Hammer, CheckCircle2 } from "lucide-react";
+import {
+  Monitor,
+  Server,
+  Hammer,
+  LineChart,
+  Atom,
+  Triangle,
+  Palette,
+  Layers,
+  Heart,
+  Terminal,
+  Code2,
+  Cpu,
+  FileCode,
+  Database,
+  GitBranch,
+  PieChart,
+  Search,
+  Zap,
+  Braces,
+  BarChart3,
+  CheckCircle2
+} from "lucide-react";
+import { Github } from "@/components/icons";
+
+// Skill Icons mapping helper
+function getSkillIcon(name: string) {
+  const cleanName = name.toLowerCase().trim();
+  if (cleanName.includes("react")) {
+    return <Atom className="w-4 h-4 text-cyan-400 animate-[spin_12s_linear_infinite]" />;
+  }
+  if (cleanName.includes("next.js") || cleanName.includes("nextjs")) {
+    return <Triangle className="w-4 h-4 rotate-180 fill-current text-foreground" />;
+  }
+  if (cleanName.includes("typescript")) {
+    return <Braces className="w-4 h-4 text-blue-400" />;
+  }
+  if (cleanName.includes("tailwind")) {
+    return <Palette className="w-4 h-4 text-teal-400" />;
+  }
+  if (cleanName.includes("bootstrap")) {
+    return <Layers className="w-4 h-4 text-purple-500" />;
+  }
+  if (cleanName.includes("responsive")) {
+    return <Heart className="w-4 h-4 text-emerald-500 fill-emerald-500/20" />;
+  }
+  if (cleanName.includes("python")) {
+    return <Terminal className="w-4 h-4 text-yellow-500" />;
+  }
+  if (cleanName.includes("java")) {
+    return <Cpu className="w-4 h-4 text-orange-500" />;
+  }
+  if (cleanName === "c") {
+    return <Code2 className="w-4 h-4 text-sky-500" />;
+  }
+  if (cleanName.includes("c++")) {
+    return <Code2 className="w-4 h-4 text-blue-500" />;
+  }
+  if (cleanName.includes("html")) {
+    return <FileCode className="w-4 h-4 text-orange-600" />;
+  }
+  if (cleanName.includes("css")) {
+    return <FileCode className="w-4 h-4 text-blue-600" />;
+  }
+  if (cleanName.includes("javascript") || cleanName.includes("js")) {
+    return <FileCode className="w-4 h-4 text-yellow-400" />;
+  }
+  if (cleanName.includes("node")) {
+    return <Cpu className="w-4 h-4 text-emerald-500" />;
+  }
+  if (cleanName.includes("express")) {
+    return <Zap className="w-4 h-4 text-yellow-500 fill-yellow-500/20" />;
+  }
+  if (cleanName.includes("mongo")) {
+    return <Database className="w-4 h-4 text-emerald-600" />;
+  }
+  if (cleanName.includes("sql") || cleanName === "postgres" || cleanName.includes("postgresql")) {
+    return <Database className="w-4 h-4 text-cyan-500" />;
+  }
+  if (cleanName.includes("supabase")) {
+    return <Zap className="w-4 h-4 text-emerald-400 fill-emerald-400/20" />;
+  }
+  if (cleanName.includes("code")) {
+    return <Monitor className="w-4 h-4 text-sky-500" />;
+  }
+  if (cleanName === "git") {
+    return <GitBranch className="w-4 h-4 text-orange-500" />;
+  }
+  if (cleanName.includes("github")) {
+    return <Github className="w-4 h-4 text-zinc-400" />;
+  }
+  if (cleanName.includes("pandas")) {
+    return <LineChart className="w-4 h-4 text-purple-400" />;
+  }
+  if (cleanName.includes("numpy")) {
+    return <Layers className="w-4 h-4 text-blue-400" />;
+  }
+  if (cleanName.includes("power bi") || cleanName.includes("powerbi")) {
+    return <BarChart3 className="w-4 h-4 text-amber-500" />;
+  }
+  if (cleanName.includes("visualization")) {
+    return <PieChart className="w-4 h-4 text-rose-400" />;
+  }
+  if (cleanName.includes("analysis") || cleanName.includes("analytics")) {
+    return <Search className="w-4 h-4 text-emerald-400" />;
+  }
+  return <CheckCircle2 className="w-4 h-4 text-primary" />;
+}
 
 const skillGroups = [
   {
     title: "Programming Languages",
     icon: Monitor,
     skills: ["C", "C++", "Python", "Java (Basic)"],
-    color: "text-blue-500",
+    color: "bg-blue-600 text-white",
   },
   {
     title: "Web Technologies",
     icon: Server,
-    skills: ["HTML5", "CSS3", "Bootstrap", "JavaScript", "React.js", "Node.js", "Express.js"],
-    color: "text-green-500",
+    skills: ["HTML5", "CSS3", "JavaScript", "React.js", "Node.js", "Express.js", "Bootstrap"],
+    color: "bg-green-600 text-white",
   },
   {
-    title: "Databases & Developer Tools",
+    title: "Databases & Tools",
     icon: Hammer,
-    skills: ["MongoDB", "SQL", "Supabase", "VS Code", "Git", "GitHub"],
-    color: "text-purple-500",
+    skills: ["MongoDB", "SQL", "Supabase", "Git", "GitHub", "VS Code"],
+    color: "bg-purple-600 text-white",
+  },
+  {
+    title: "Data Science & Analytics",
+    icon: LineChart,
+    skills: ["Python", "SQL", "Power BI", "Data Visualization", "Data Analysis"],
+    color: "bg-amber-600 text-white",
   },
 ];
 
@@ -71,10 +184,10 @@ export function Skills() {
         {/* Stats Section */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16">
           {[
-            { label: "Projects Completed", val: "5+" },
-            { label: "Technologies Used", val: "15+" },
-            { label: "Years Programming", val: "3+" },
-            { label: "Clean Code Quality", val: "90%" },
+            { label: "Projects Completed", val: "5+", emoji: "🚀" },
+            { label: "Technologies Used", val: "15+", emoji: "💻" },
+            { label: "Years Programming", val: "3+", emoji: "📅" },
+            { label: "Code Quality", val: "80%", emoji: "⭐" },
           ].map((stat, idx) => (
             <motion.div
               key={idx}
@@ -82,16 +195,17 @@ export function Skills() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4 }}
-              className="bg-card border border-border/80 p-5 rounded-2xl text-center shadow-sm"
+              className="bg-card border border-border/80 p-5 rounded-2xl text-center shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="text-primary text-xl md:text-2xl font-extrabold mb-1">{stat.val}</div>
+              <div className="text-3xl mb-2">{stat.emoji}</div>
+              <div className="text-foreground text-xl md:text-2xl font-extrabold mb-1">{stat.val}</div>
               <div className="text-muted-foreground text-[10px] md:text-xs font-semibold uppercase tracking-wider">{stat.label}</div>
             </motion.div>
           ))}
         </div>
 
         {/* Skills Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {skillGroups.map((group, groupIdx) => {
             const Icon = group.icon;
             return (
@@ -101,11 +215,12 @@ export function Skills() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: groupIdx * 0.1 }}
-                className="bg-card border border-border p-6 md:p-8 rounded-3xl shadow-sm glow-card flex flex-col justify-between"
+                className="bg-card border border-border p-6 md:p-8 rounded-3xl shadow-sm glow-card"
               >
                 <div>
-                  <div className="flex items-center space-x-3 mb-6">
-                    <div className={`p-2.5 bg-muted rounded-xl ${group.color}`}>
+                  {/* Header box style */}
+                  <div className="flex items-center space-x-4 mb-6">
+                    <div className={`w-11 h-11 rounded-xl flex items-center justify-center ${group.color} shadow-md`}>
                       <Icon className="w-5 h-5" />
                     </div>
                     <h3 className="font-extrabold text-base md:text-lg text-foreground/95">
@@ -113,14 +228,18 @@ export function Skills() {
                     </h3>
                   </div>
 
-                  <div className="flex flex-wrap gap-2.5">
+                  {/* Skills Grid */}
+                  <div className="grid grid-cols-2 gap-3">
                     {group.skills.map((skill) => (
-                      <span
+                      <div
                         key={skill}
-                        className="px-3.5 py-1.5 bg-muted hover:bg-primary/5 hover:text-primary border border-border/60 hover:border-primary/20 text-xs md:text-sm font-semibold rounded-2xl text-muted-foreground transition-all duration-200"
+                        className="flex items-center gap-2.5 p-3 md:p-3.5 bg-muted/40 hover:bg-primary/5 border border-border/60 hover:border-primary/20 text-xs md:text-sm font-semibold rounded-2xl text-foreground/80 hover:text-foreground transition-all duration-200 shadow-sm"
                       >
-                        {skill}
-                      </span>
+                        <div className="flex-shrink-0">
+                          {getSkillIcon(skill)}
+                        </div>
+                        <span className="truncate">{skill}</span>
+                      </div>
                     ))}
                   </div>
                 </div>
