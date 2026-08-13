@@ -181,7 +181,7 @@ export function Hero() {
             animate={{ opacity: 0.6 }}
             transition={{ delay: 1.1 }}
             onClick={handleScrollToAbout}
-            className="flex flex-col items-center space-y-1 text-muted-foreground hover:text-primary cursor-pointer transition-colors pt-6"
+            className="flex flex-col items-center space-y-1 text-muted-foreground hover:text-primary cursor-pointer transition-colors !mt-3"
           >
             <span className="text-[10px] uppercase tracking-widest font-semibold">Scroll Down</span>
             <ChevronDown className="w-4 h-4 animate-bounce" />
