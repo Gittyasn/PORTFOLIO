@@ -1,4 +1,4 @@
-﻿# 🚀 Yaswanth Bandaru — Personal Portfolio
+﻿#  Yaswanth Bandaru — Personal Portfolio
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.3-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
