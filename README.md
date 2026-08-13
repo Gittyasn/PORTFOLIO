@@ -146,7 +146,7 @@ Replace `public/yaswanth-resume.pdf` with your own resume PDF.
 
 ---
 
-## 📸 Sections Overview
+##  Sections Overview
 
 | Section | Description |
 |---|---|
