@@ -53,8 +53,11 @@ export function Experience() {
   return (
     <section
       id="internships"
-      className="py-20 bg-gradient-to-br from-[#fcf7ff] via-[#faefff] to-[#f5f0ff] dark:from-[#08070b] dark:via-[#0c0a12] dark:to-[#08070b] relative overflow-hidden border-b border-border/20"
+      className="py-20 bg-gradient-to-br from-[#fdf8ff] via-[#f9f1ff] to-[#f4ebff] dark:from-[#08070b] dark:via-[#0c0a12] dark:to-[#08070b] relative overflow-hidden border-b border-border/20"
     >
+      {/* Decorative Violet Glow Blur */}
+      <div className="absolute bottom-10 right-10 w-72 h-72 rounded-full bg-violet-400/15 dark:bg-violet-500/10 blur-3xl pointer-events-none" />
+
       <div className="container mx-auto px-4 md:px-10 max-w-7xl relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
