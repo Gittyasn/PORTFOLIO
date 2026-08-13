@@ -57,14 +57,6 @@ export function Footer() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
             </a>
             <a
-              href="#projects"
-              onClick={(e) => handleNavClick(e, "projects")}
-              className="hover:text-white transition-colors duration-200 relative group"
-            >
-              Projects
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
-            </a>
-            <a
               href="#education"
               onClick={(e) => handleNavClick(e, "education")}
               className="hover:text-white transition-colors duration-200 relative group"
@@ -78,22 +70,6 @@ export function Footer() {
               className="hover:text-white transition-colors duration-200 relative group"
             >
               Experience
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
-            </a>
-            <a
-              href="#certifications"
-              onClick={(e) => handleNavClick(e, "certifications")}
-              className="hover:text-white transition-colors duration-200 relative group"
-            >
-              Certifications
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
-            </a>
-            <a
-              href="#skills"
-              onClick={(e) => handleNavClick(e, "skills")}
-              className="hover:text-white transition-colors duration-200 relative group"
-            >
-              Skills
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
             </a>
             <a
