@@ -162,7 +162,7 @@ Replace `public/yaswanth-resume.pdf` with your own resume PDF.
 
 ---
 
-## 🌐 Deployment (Vercel)
+##  Deployment (Vercel)
 
 ### Manual Deploy Steps
 
