@@ -21,33 +21,33 @@ export function Footer() {
   };
 
   return (
-    <footer className="relative overflow-hidden border-t border-zinc-900 bg-zinc-950 text-white py-6">
+    <footer className="relative overflow-hidden border-t border-zinc-900 bg-zinc-950 text-white py-8">
       {/* Subtle top spotlight flare */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(244,63,94,0.03)_0%,transparent_50%)] pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Scroll To Top Button */}
-        <div className="text-center mb-3">
+        <div className="text-center mb-4.5">
           <button
             onClick={scrollToTop}
-            className="inline-flex items-center justify-center w-8.5 h-8.5 bg-gradient-to-r from-primary to-rose-600 rounded-full hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 cursor-pointer text-white"
+            className="inline-flex items-center justify-center w-9.5 h-9.5 bg-gradient-to-r from-primary to-rose-600 rounded-full hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 cursor-pointer text-white"
             aria-label="Scroll to top"
           >
-            <ArrowUp className="w-4 h-4" />
+            <ArrowUp className="w-4.5 h-4.5" />
           </button>
         </div>
 
         {/* Central Brand Info */}
-        <div className="text-center space-y-3.5">
+        <div className="text-center space-y-4.5">
           <div className="text-xl font-bold text-white font-poppins tracking-tight">
             Bandaru Yaswanth
           </div>
-          <p className="text-zinc-400 max-w-xl mx-auto text-xs leading-relaxed">
+          <p className="text-zinc-400 max-w-xl mx-auto text-sm leading-relaxed">
             Full-Stack Developer & Data Analyst passionate about creating exceptional digital experiences.
           </p>
 
           {/* Centered Navigation Links */}
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-1.5 text-zinc-400 text-xs">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-zinc-400 text-sm">
             <a
               href="#about"
               onClick={(e) => handleNavClick(e, "about")}
@@ -83,11 +83,11 @@ export function Footer() {
           </div>
 
           {/* Copyright Info */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-zinc-500 text-[10px] pt-3 border-t border-zinc-900/50 max-w-2xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-zinc-500 text-xs pt-4 border-t border-zinc-900/50 max-w-2xl mx-auto">
             <p>© {currentYear} Bandaru Yaswanth. All rights reserved.</p>
             <span className="hidden sm:inline text-zinc-700">•</span>
             <p className="flex items-center gap-1.5">
-              Built with <Heart className="w-3 h-3 text-rose-500 fill-rose-500 animate-pulse" />
+              Built with <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 animate-pulse" />
             </p>
           </div>
         </div>
