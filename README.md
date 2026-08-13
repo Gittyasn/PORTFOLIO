@@ -80,7 +80,7 @@ PORTFOLIO/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js 18.x or higher
