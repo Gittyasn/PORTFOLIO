@@ -23,14 +23,14 @@ export function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-zinc-900 bg-zinc-950 text-white py-8">
       {/* Subtle top spotlight flare */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(244,63,94,0.03)_0%,transparent_50%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(14,165,233,0.03)_0%,transparent_50%)] pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Scroll To Top Button */}
         <div className="text-center mb-4.5">
           <button
             onClick={scrollToTop}
-            className="inline-flex items-center justify-center w-9.5 h-9.5 bg-gradient-to-r from-primary to-rose-600 rounded-full hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 cursor-pointer text-white"
+            className="inline-flex items-center justify-center w-9.5 h-9.5 bg-gradient-to-r from-primary to-sky-400 rounded-full hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 cursor-pointer text-white"
             aria-label="Scroll to top"
           >
             <ArrowUp className="w-4.5 h-4.5" />
@@ -87,7 +87,7 @@ export function Footer() {
             <p>© {currentYear} Bandaru Yaswanth. All rights reserved.</p>
             <span className="hidden sm:inline text-zinc-700">•</span>
             <p className="flex items-center gap-1.5">
-              Built with <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 animate-pulse" />
+              Built with <Heart className="w-3.5 h-3.5 text-sky-400 fill-sky-400 animate-pulse" />
             </p>
           </div>
         </div>

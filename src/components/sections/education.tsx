@@ -9,7 +9,7 @@ export function Education() {
     <section id="education" className="py-20 bg-gradient-to-br from-[#fdf8ff] via-[#f9f1ff] to-[#f4ebff] relative overflow-hidden border-b border-zinc-200/50 text-zinc-900">
       {/* Decorative Violet Glow Blur */}
       <div className="absolute bottom-10 right-10 w-72 h-72 rounded-full bg-violet-400/15 blur-3xl pointer-events-none" />
-      
+
       <div className="container mx-auto px-4 md:px-10 max-w-7xl relative z-10">
         {/* Education History */}
         <div className="space-y-4 text-center">
@@ -59,11 +59,11 @@ export function Education() {
             <div className="mt-6 pt-4 border-t border-zinc-100 flex items-center justify-between">
               <span className="text-xs text-zinc-500 font-medium">Result</span>
               <span className="text-xs font-extrabold text-primary bg-primary/10 px-2.5 py-1 rounded-lg">
-                72.02%
+                8.1
               </span>
             </div>
           </motion.div>
-          
+
           {/* Card 2: Intermediate */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -90,11 +90,11 @@ export function Education() {
             <div className="mt-6 pt-4 border-t border-zinc-100 flex items-center justify-between">
               <span className="text-xs text-zinc-500 font-medium">Result</span>
               <span className="text-xs font-extrabold text-primary bg-primary/10 px-2.5 py-1 rounded-lg">
-                91.02%
+                9.2
               </span>
             </div>
           </motion.div>
-          
+
           {/* Card 3: SSC */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -106,7 +106,7 @@ export function Education() {
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
             <div className="flex items-center justify-between mb-5">
               <span className="text-[11px] font-bold tracking-wider text-primary bg-primary/10 px-3 py-1.5 rounded-full uppercase">
-                2018 - 2019
+                2008 - 2019
               </span>
               <div className="w-10 h-10 bg-primary/10 rounded-2xl flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
                 <Award className="w-5 h-5" />
@@ -121,7 +121,7 @@ export function Education() {
             <div className="mt-6 pt-4 border-t border-zinc-100 flex items-center justify-between">
               <span className="text-xs text-zinc-500 font-medium">Result</span>
               <span className="text-xs font-extrabold text-primary bg-primary/10 px-2.5 py-1 rounded-lg">
-                98.00%
+                9.8
               </span>
             </div>
           </motion.div>

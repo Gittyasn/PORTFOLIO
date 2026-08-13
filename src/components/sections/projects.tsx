@@ -31,7 +31,7 @@ const projectsData = [
     title: "LinkedIn Job Posting Data Analysis",
     category: "Analytics",
     desc: "Exploratory data analysis of 2023-2024 job postings, mining local trends, key recruiter skills, and location distributions using statistical Python scripts.",
-    image: "https://images.pexels.com/photos/4064244/pexels-photo-4064244.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/3760810/pexels-photo-3760810.jpeg?auto=compress&cs=tinysrgb&w=800",
     tags: ["Python", "Pandas", "Matplotlib", "Seaborn", "Data Mining"],
     github: "https://github.com/Gittyasn/linkedin-job-posting",
     demo: "#",
@@ -148,7 +148,7 @@ function ProjectCard({ project }: { project: typeof projectsData[0] }) {
         <p className="text-zinc-600 text-xs leading-relaxed line-clamp-2 flex-grow">
           {project.desc}
         </p>
-        
+
         {/* Tech tags */}
         <div className="flex flex-wrap gap-1.5 pt-1">
           {project.tags.slice(0, 4).map((tag) => (
@@ -210,11 +210,10 @@ export function Projects() {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold transition-all duration-300 cursor-pointer ${
-                activeCategory === category
+              className={`px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold transition-all duration-300 cursor-pointer ${activeCategory === category
                   ? "bg-primary text-primary-foreground shadow-md shadow-primary/25 scale-102"
                   : "bg-white border border-zinc-200 text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50"
-              }`}
+                }`}
             >
               {category}
             </button>

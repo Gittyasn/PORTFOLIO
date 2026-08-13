@@ -41,8 +41,8 @@ const certificationsData = [
 
 export function Certifications() {
   return (
-    <section id="certifications" className="py-20 bg-muted/5 bg-grid-pattern relative overflow-hidden border-b border-border/20">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(244,63,94,0.05)_0%,transparent_60%)] pointer-events-none" />
+    <section id="certifications" className="py-20 bg-gradient-to-br from-[#fdf8ff] via-[#f9f1ff] to-[#f4ebff] relative overflow-hidden border-b border-zinc-200/50">
+      <div className="absolute top-10 left-10 w-64 h-64 rounded-full bg-violet-400/15 blur-3xl pointer-events-none" />
       <div className="container mx-auto px-4 md:px-10 max-w-7xl">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
@@ -51,7 +51,7 @@ export function Certifications() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-5xl font-extrabold tracking-tight"
+            className="text-3xl md:text-5xl font-extrabold tracking-tight text-zinc-900"
           >
             Certifications & Achievements
           </motion.h2>
@@ -60,7 +60,7 @@ export function Certifications() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto"
+            className="text-zinc-500 text-sm md:text-base max-w-2xl mx-auto"
           >
             Professional credentials validating my technical competency, knowledge, and commitment to learning
           </motion.p>
@@ -69,9 +69,9 @@ export function Certifications() {
         {/* Info Highlights */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12">
           {[
-            { label: "Total Certifications", val: "7+" },
-            { label: "Cloud Platforms", val: "AWS / Azure" },
-            { label: "Verified Skills", val: "20+" },
+            { label: "Total Certifications", val: "4+" },
+            { label: "Technologies", val: "Python / React" },
+            { label: "Verified Skills", val: "15+" },
             { label: "Status", val: "100% Active" },
           ].map((item, idx) => (
             <motion.div
@@ -79,10 +79,10 @@ export function Certifications() {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="bg-card border border-border/80 p-4 md:p-6 rounded-2xl text-center shadow-sm"
+              className="bg-white border border-zinc-200/80 p-4 md:p-6 rounded-2xl text-center shadow-sm"
             >
               <div className="text-primary text-xl md:text-2xl font-extrabold mb-1">{item.val}</div>
-              <div className="text-muted-foreground text-[10px] md:text-xs font-semibold uppercase tracking-wider">{item.label}</div>
+              <div className="text-zinc-500 text-[10px] md:text-xs font-semibold uppercase tracking-wider">{item.label}</div>
             </motion.div>
           ))}
         </div>
@@ -96,7 +96,7 @@ export function Certifications() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="bg-card border border-border/80 p-6 rounded-3xl flex flex-col justify-between h-full glow-card shadow-sm"
+              className="bg-white border border-zinc-200/80 p-6 rounded-3xl flex flex-col justify-between h-full shadow-md hover:shadow-lg transition-all duration-300"
             >
               {/* Card Top */}
               <div className="space-y-4">
@@ -111,10 +111,10 @@ export function Certifications() {
                 </div>
 
                 <div className="space-y-2">
-                  <h3 className="font-extrabold text-sm md:text-base leading-snug text-foreground/95">
+                  <h3 className="font-extrabold text-sm md:text-base leading-snug text-zinc-900">
                     {cert.title}
                   </h3>
-                  <p className="text-xs text-muted-foreground font-semibold">
+                  <p className="text-xs text-zinc-500 font-semibold">
                     Issued by <span className="text-primary">{cert.issuer}</span> • {cert.date}
                   </p>
                 </div>
@@ -124,7 +124,7 @@ export function Certifications() {
                   {cert.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="px-2 py-0.5 bg-muted text-muted-foreground text-[10px] rounded-md font-medium"
+                      className="px-2 py-0.5 bg-zinc-50 border border-zinc-200/60 text-zinc-500 text-[10px] rounded-md font-medium"
                     >
                       {skill}
                     </span>
@@ -133,9 +133,9 @@ export function Certifications() {
               </div>
 
               {/* Card Bottom / Footer Actions */}
-              <div className="pt-6 mt-6 border-t border-border/40 flex items-center justify-between text-xs">
+              <div className="pt-6 mt-6 border-t border-zinc-200/60 flex items-center justify-between text-xs">
                 {cert.id && (
-                  <span className="text-muted-foreground font-mono">
+                  <span className="text-zinc-400 font-mono">
                     ID: {cert.id}
                   </span>
                 )}
