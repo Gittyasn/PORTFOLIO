@@ -143,7 +143,7 @@ export function Projects() {
                 className="bg-card border border-border/80 rounded-3xl overflow-hidden group flex flex-col h-full glow-card shadow-sm"
               >
                 {/* Project Image */}
-                <div className="relative h-48 overflow-hidden bg-muted">
+                <div className="relative h-40 overflow-hidden bg-muted">
                   <Image
                     src={project.image}
                     alt={project.title}
@@ -160,7 +160,7 @@ export function Projects() {
                         className="p-3 bg-white/95 rounded-full text-zinc-900 hover:bg-primary hover:text-primary-foreground transition-all duration-200 transform scale-90 group-hover:scale-100"
                         aria-label="View demo"
                       >
-                        <Eye className="w-5 h-5" />
+                        <Eye className="w-4 h-4" />
                       </a>
                     )}
                     <a
@@ -170,31 +170,31 @@ export function Projects() {
                       className="p-3 bg-white/95 rounded-full text-zinc-900 hover:bg-primary hover:text-primary-foreground transition-all duration-200 transform scale-90 group-hover:scale-100"
                       aria-label="GitHub Repository"
                     >
-                      <Github className="w-5 h-5" />
+                      <Github className="w-4 h-4" />
                     </a>
                   </div>
                 </div>
 
                 {/* Card Info */}
-                <div className="p-6 flex flex-col flex-grow space-y-4">
+                <div className="p-4 flex flex-col flex-grow space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full font-bold">
+                    <span className="px-2.5 py-0.5 bg-primary/10 text-primary text-[10px] rounded-full font-bold uppercase tracking-wider">
                       {project.category}
                     </span>
                   </div>
-                  <h3 className="text-lg md:text-xl font-bold tracking-tight text-foreground/95">
+                  <h3 className="text-base md:text-lg font-bold tracking-tight text-foreground/95 line-clamp-1">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground text-xs md:text-sm leading-relaxed flex-grow">
+                  <p className="text-muted-foreground text-xs leading-relaxed line-clamp-2 flex-grow">
                     {project.desc}
                   </p>
                   
                   {/* Tech tags */}
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    {project.tags.map((tag) => (
+                  <div className="flex flex-wrap gap-1.5 pt-1">
+                    {project.tags.slice(0, 4).map((tag) => (
                       <span
                         key={tag}
-                        className="px-2.5 py-1 bg-muted border border-border/50 text-muted-foreground text-[10px] md:text-xs rounded-lg font-medium"
+                        className="px-2 py-0.5 bg-muted border border-border/50 text-muted-foreground text-[10px] rounded-md font-medium"
                       >
                         {tag}
                       </span>
