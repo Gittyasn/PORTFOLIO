@@ -30,7 +30,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Category | Technology |
 |---|---|
