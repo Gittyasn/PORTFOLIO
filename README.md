@@ -15,7 +15,7 @@
 
 ---
 
-## ✨ Features
+##  Features
 
 - 🎨 **Sky Blue Brand Theme** — Consistent color system with CSS variables
 - 🌙 **Dark / Light Mode** — Seamless theme toggle with next-themes
