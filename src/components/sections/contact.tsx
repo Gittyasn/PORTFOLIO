@@ -97,10 +97,10 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 bg-muted/10 bg-grid-pattern relative overflow-hidden"
+      className="py-20 bg-gradient-to-br from-orange-50/70 via-yellow-50/40 to-orange-50/70 dark:from-zinc-950 dark:via-zinc-900/40 dark:to-zinc-950 bg-grid-pattern relative overflow-hidden"
     >
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(244,63,94,0.1)_0%,transparent_70%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(249,115,22,0.06)_0%,transparent_70%)] pointer-events-none" />
       <div className="absolute top-20 right-10 w-56 h-56 rounded-full bg-primary/5 blur-3xl floating-element" />
       <div className="absolute bottom-20 left-10 w-44 h-44 rounded-full bg-rose-400/5 blur-3xl floating-element-delayed" />
 
@@ -112,7 +112,7 @@ export function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-5xl font-extrabold tracking-tight"
+            className="text-3xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-violet-600 to-indigo-600 dark:from-violet-400 dark:to-indigo-400 bg-clip-text text-transparent font-poppins pb-1"
           >
             Let's Connect
           </motion.h2>
@@ -123,7 +123,7 @@ export function Contact() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto"
           >
-            Ready to collaborate on your next project? Drop a message and let's turn your idea into reality!
+            Ready to collaborate on your next project? I'd love to hear from you!
           </motion.p>
         </div>
 
@@ -260,7 +260,7 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="lg:col-span-5 flex flex-col justify-between space-y-8"
+            className="lg:col-span-5 flex flex-col space-y-8"
           >
             {/* Quick Cards */}
             <div className="space-y-6">
@@ -273,7 +273,7 @@ export function Contact() {
                 href="mailto:yaswanthbandaruu@gmail.com"
                 className="flex items-center gap-4 bg-card border border-border p-5 rounded-2xl shadow-sm hover:border-primary/45 transition-colors group"
               >
-                <div className="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+                <div className="w-11 h-11 bg-blue-600 rounded-xl flex items-center justify-center text-white group-hover:scale-105 transition-transform">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
@@ -283,19 +283,22 @@ export function Contact() {
               </a>
 
               {/* Phone details */}
-              <div className="flex items-center gap-4 bg-card border border-border p-5 rounded-2xl shadow-sm">
-                <div className="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+              <a
+                href="tel:+919398106078"
+                className="flex items-center gap-4 bg-card border border-border p-5 rounded-2xl shadow-sm hover:border-primary/45 transition-colors group"
+              >
+                <div className="w-11 h-11 bg-emerald-600 rounded-xl flex items-center justify-center text-white group-hover:scale-105 transition-transform">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="font-bold text-xs uppercase tracking-wider text-muted-foreground">Phone</h4>
                   <p className="text-sm font-semibold text-foreground/90">+91 9398106078</p>
                 </div>
-              </div>
+              </a>
 
               {/* Location details */}
               <div className="flex items-center gap-4 bg-card border border-border p-5 rounded-2xl shadow-sm">
-                <div className="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+                <div className="w-11 h-11 bg-rose-600 rounded-xl flex items-center justify-center text-white">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
@@ -310,12 +313,12 @@ export function Contact() {
               <h3 className="text-lg md:text-xl font-bold text-foreground/90">
                 Connect With Me
               </h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <a
                   href="https://github.com/Gittyasn"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-3 p-4 bg-card border border-border rounded-2xl shadow-sm hover:border-primary/45 transition-colors group"
+                  className="flex items-center justify-center gap-2.5 p-4 bg-card border border-border rounded-2xl shadow-sm hover:border-primary/45 transition-colors group"
                 >
                   <Github className="w-5 h-5 text-zinc-400 group-hover:text-primary transition-colors" />
                   <span className="font-semibold text-sm text-foreground/80 group-hover:text-foreground transition-colors">GitHub</span>
@@ -324,20 +327,23 @@ export function Contact() {
                   href="https://www.linkedin.com/in/yaswanth-bandaru-98912b"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-3 p-4 bg-card border border-border rounded-2xl shadow-sm hover:border-primary/45 transition-colors group"
+                  className="flex items-center justify-center gap-2.5 p-4 bg-card border border-border rounded-2xl shadow-sm hover:border-primary/45 transition-colors group"
                 >
                   <Linkedin className="w-5 h-5 text-zinc-400 group-hover:text-primary transition-colors" />
                   <span className="font-semibold text-sm text-foreground/80 group-hover:text-foreground transition-colors">LinkedIn</span>
                 </a>
+                <a
+                  href="https://wa.me/919398106078"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2.5 p-4 bg-card border border-border rounded-2xl shadow-sm hover:border-emerald-500/45 transition-colors group"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="w-5 h-5 text-zinc-400 group-hover:text-emerald-500 transition-colors" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                  </svg>
+                  <span className="font-semibold text-sm text-foreground/80 group-hover:text-foreground transition-colors">WhatsApp</span>
+                </a>
               </div>
-            </div>
-
-            {/* Prompt footer info */}
-            <div className="bg-primary/5 border border-primary/10 p-6 rounded-3xl space-y-2">
-              <h4 className="font-bold text-sm text-foreground/90">Let's build something awesome together!</h4>
-              <p className="text-xs text-muted-foreground leading-relaxed">
-                Whether you need a full-scale web application, database schema tuning, or simply want to say hello - my inbox is open!
-              </p>
             </div>
           </motion.div>
         </div>
