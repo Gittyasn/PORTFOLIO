@@ -53,10 +53,10 @@ export function Experience() {
   return (
     <section
       id="internships"
-      className="py-20 bg-gradient-to-br from-[#fdf8ff] via-[#f9f1ff] to-[#f4ebff] dark:from-[#08070b] dark:via-[#0c0a12] dark:to-[#08070b] relative overflow-hidden border-b border-border/20"
+      className="py-20 bg-gradient-to-br from-[#fdf8ff] via-[#f9f1ff] to-[#f4ebff] relative overflow-hidden border-b border-zinc-200/50 text-zinc-900"
     >
       {/* Decorative Violet Glow Blur */}
-      <div className="absolute bottom-10 right-10 w-72 h-72 rounded-full bg-violet-400/15 dark:bg-violet-500/10 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-10 w-72 h-72 rounded-full bg-violet-400/15 blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-10 max-w-7xl relative z-10">
         {/* Section Header */}
@@ -66,7 +66,7 @@ export function Experience() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-violet-600 to-indigo-600 dark:from-violet-400 dark:to-indigo-400 bg-clip-text text-transparent font-poppins pb-1"
+            className="text-3xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-poppins pb-1"
           >
             Professional Experience
           </motion.h2>
@@ -75,7 +75,7 @@ export function Experience() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto"
+            className="text-zinc-500 text-sm md:text-base max-w-2xl mx-auto"
           >
             My professional development journey through internships and software engineering practice
           </motion.p>
@@ -99,7 +99,7 @@ export function Experience() {
                 <div
                   className={`absolute left-4 md:left-6 ${
                     isLeft ? "lg:left-full" : "lg:left-0"
-                  } -translate-x-1/2 top-7 w-3.5 h-3.5 bg-[#2563eb] rounded-full border-[2.5px] border-zinc-900 dark:border-zinc-100 shadow z-10`}
+                  } -translate-x-1/2 top-7 w-3.5 h-3.5 bg-[#2563eb] rounded-full border-[2.5px] border-white shadow-md z-10`}
                 />
 
                 {/* Card Container */}
@@ -108,7 +108,7 @@ export function Experience() {
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, type: "spring", bounce: 0.2 }}
-                  className="w-[calc(100%-24px)] ml-8 md:ml-10 lg:ml-0 lg:w-[90%] bg-card border border-border p-6 md:p-8 rounded-3xl shadow-sm glow-card hover:border-primary/30"
+                  className="w-[calc(100%-24px)] ml-8 md:ml-10 lg:ml-0 lg:w-[90%] bg-white border border-zinc-200/80 p-6 md:p-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300"
                 >
                   {/* Company & Role Header */}
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
@@ -117,21 +117,21 @@ export function Experience() {
                         {item.emoji}
                       </div>
                       <div>
-                        <h3 className="font-extrabold text-lg md:text-xl text-foreground">
+                        <h3 className="font-extrabold text-lg md:text-xl text-zinc-900">
                           {item.company}
                         </h3>
-                        <p className="text-sm font-semibold text-primary">{item.role}</p>
+                        <p className="text-sm font-semibold text-rose-600">{item.role}</p>
                       </div>
                     </div>
                   </div>
 
                   {/* Date and Location Badges */}
-                  <div className="flex flex-wrap items-center gap-3 text-xs md:text-sm text-muted-foreground mb-4">
+                  <div className="flex flex-wrap items-center gap-3 text-xs md:text-sm text-zinc-500 mb-4">
                     <span className="flex items-center gap-1">
                       <Calendar className="w-3.5 h-3.5" />
                       {item.period}
                     </span>
-                    <span className="w-1 h-1 rounded-full bg-muted-foreground/40 hidden sm:inline" />
+                    <span className="w-1 h-1 rounded-full bg-zinc-300 hidden sm:inline" />
                     <span className="flex items-center gap-1">
                       <MapPin className="w-3.5 h-3.5" />
                       {item.location}
@@ -139,19 +139,19 @@ export function Experience() {
                   </div>
 
                   {/* Summary Text */}
-                  <p className="text-muted-foreground text-xs md:text-sm leading-relaxed mb-6">
+                  <p className="text-zinc-600 text-xs md:text-sm leading-relaxed mb-6">
                     {item.desc}
                   </p>
 
                   {/* Achievements Checklist */}
                   <div className="space-y-3">
-                    <h4 className="text-xs md:text-sm font-bold text-foreground flex items-center gap-2">
-                      <Award className="w-4 h-4 text-primary" /> Key Achievements:
+                    <h4 className="text-xs md:text-sm font-bold text-zinc-800 flex items-center gap-2">
+                      <Award className="w-4 h-4 text-rose-500" /> Key Achievements:
                     </h4>
                     <ul className="space-y-2.5 text-xs md:text-sm">
                       {item.achievements.map((ach, idx) => (
-                        <li key={idx} className="flex items-start gap-2.5 text-muted-foreground">
-                          <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                        <li key={idx} className="flex items-start gap-2.5 text-zinc-600">
+                          <span className="w-1.5 h-1.5 rounded-full bg-rose-500 mt-2 flex-shrink-0" />
                           <span className="leading-relaxed">{ach}</span>
                         </li>
                       ))}
