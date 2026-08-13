@@ -82,22 +82,22 @@ export function Experience() {
         </div>
 
         {/* Timeline container */}
-        <div className="relative ml-4 md:ml-6 lg:mx-auto lg:flex lg:flex-col lg:items-center space-y-12">
-          {/* Vertical timeline line */}
-          <div className="absolute left-4 md:left-6 lg:left-1/2 -translate-x-[1.5px] top-0 bottom-0 w-[3px] bg-gradient-to-b from-blue-500 to-purple-500" />
+        <div className="relative space-y-10 md:space-y-12">
+          {/* Vertical timeline line - left on mobile, center on desktop */}
+          <div className="absolute left-5 md:left-7 lg:left-1/2 -translate-x-[1.5px] top-0 bottom-0 w-[3px] bg-gradient-to-b from-blue-500 to-purple-500" />
 
           {experienceData.map((item, index) => {
             const isLeft = index % 2 === 0;
             return (
               <div
                 key={item.company}
-                className={`relative w-full lg:w-1/2 flex flex-col items-start ${isLeft ? "lg:items-end lg:pr-12 lg:mr-auto" : "lg:items-start lg:pl-12 lg:ml-auto"
-                  }`}
+                className={`relative flex flex-col pl-14 md:pl-16 lg:pl-0 lg:w-1/2 ${
+                  isLeft ? "lg:items-end lg:pr-12 lg:mr-auto lg:pl-0" : "lg:items-start lg:pl-12 lg:ml-auto"
+                }`}
               >
-                {/* Timeline node dot positioned relative to page center */}
+                {/* Timeline node dot */}
                 <div
-                  className={`absolute left-4 md:left-6 ${isLeft ? "lg:left-full" : "lg:left-0"
-                    } -translate-x-1/2 top-7 w-3.5 h-3.5 bg-[#2563eb] rounded-full border-[2.5px] border-white shadow-md z-10`}
+                  className={`absolute left-5 md:left-7 ${isLeft ? "lg:left-full" : "lg:left-0"} -translate-x-1/2 top-7 w-3.5 h-3.5 bg-[#2563eb] rounded-full border-[2.5px] border-white shadow-md z-10`}
                 />
 
                 {/* Card Container */}
@@ -106,7 +106,7 @@ export function Experience() {
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, type: "spring", bounce: 0.2 }}
-                  className="w-[calc(100%-24px)] ml-8 md:ml-10 lg:ml-0 lg:w-[90%] bg-white border border-zinc-200/80 p-6 md:p-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300"
+                  className="w-full lg:w-[90%] bg-white border border-zinc-200/80 p-5 md:p-7 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300"
                 >
                   {/* Company & Role Header */}
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">

@@ -167,7 +167,7 @@ export function Navbar() {
           >
             {mounted ? (
               resolvedTheme === "dark" ? (
-                <Moon className="w-4.5 h-4.5 text-rose-400" />
+                <Moon className="w-4.5 h-4.5 text-sky-400" />
               ) : (
                 <Sun className="w-4.5 h-4.5 text-amber-500" />
               )
