@@ -3,17 +3,26 @@
 import * as React from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Eye } from "lucide-react";
+import { Eye } from "lucide-react";
 import { Github } from "@/components/icons";
 
-const categories = ["All", "Full Stack", "Analytics"];
+const categories = ["All", "Full Stack", "Analytics", "Portfolio"];
 
 const projectsData = [
+  {
+    title: "Personal Portfolio Website",
+    category: "Portfolio",
+    desc: "A personal developer portfolio website showcasing my skills, projects, and experience. Built with Next.js, React, Tailwind CSS, and Framer Motion.",
+    image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tags: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/Gittyasn/portfolio",
+    demo: "#home",
+  },
   {
     title: "Student Club & Event Management System",
     category: "Full Stack",
     desc: "A full-stack club and event coordination system built with React, Vite, and Supabase, supporting attendee tracking, registrations, and scheduling.",
-    image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/2263436/pexels-photo-2263436.jpeg?auto=compress&cs=tinysrgb&w=800",
     tags: ["React", "Vite", "Supabase", "JavaScript", "Tailwind CSS"],
     github: "https://github.com/Gittyasn/student-club-and-event-management-system",
     demo: "#",
@@ -22,7 +31,7 @@ const projectsData = [
     title: "LinkedIn Job Posting Data Analysis",
     category: "Analytics",
     desc: "Exploratory data analysis of 2023-2024 job postings, mining local trends, key recruiter skills, and location distributions using statistical Python scripts.",
-    image: "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/4064244/pexels-photo-4064244.jpeg?auto=compress&cs=tinysrgb&w=800",
     tags: ["Python", "Pandas", "Matplotlib", "Seaborn", "Data Mining"],
     github: "https://github.com/Gittyasn/linkedin-job-posting",
     demo: "#",
@@ -31,7 +40,7 @@ const projectsData = [
     title: "Sales Forecasting Project",
     category: "Analytics",
     desc: "Time-series machine learning models built in Python to predict future sales trends and analyze seasonal demands for commercial retail sectors.",
-    image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=800",
     tags: ["Python", "Machine Learning", "Scikit-Learn", "Time-Series"],
     github: "https://github.com/Gittyasn/sales-forecasting-project",
     demo: "#",
@@ -40,7 +49,7 @@ const projectsData = [
     title: "Titanic Survival Prediction",
     category: "Analytics",
     desc: "Classic classification modeling in Python predicting passenger survival probabilities based on demographic, ticket, and cabin parameters.",
-    image: "https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/1586866/pexels-photo-1586866.jpeg?auto=compress&cs=tinysrgb&w=800",
     tags: ["Python", "Classification", "Data Cleaning", "Scikit-Learn"],
     github: "https://github.com/Gittyasn/titanic",
     demo: "#",
@@ -49,7 +58,7 @@ const projectsData = [
     title: "Airbnb Data Analysis & Visualization",
     category: "Analytics",
     desc: "Investigated Airbnb travel listings, reviewing pricing distributions, customer reviews, and geographical demand hotspots via visual plotting.",
-    image: "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=800",
     tags: ["Python", "Matplotlib", "Data Visualization", "Pandas"],
     github: "https://github.com/Gittyasn/airbnb",
     demo: "#",
@@ -83,9 +92,14 @@ export function Projects() {
   });
 
   return (
-    <section id="projects" className="py-20 relative overflow-hidden bg-background bg-dot-pattern border-b border-border/20">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(244,63,94,0.06)_0%,transparent_70%)] pointer-events-none" />
-      <div className="container mx-auto px-4 md:px-10 max-w-7xl">
+    <section
+      id="projects"
+      className="py-20 bg-gradient-to-br from-[#fdf8ff] via-[#f9f1ff] to-[#f4ebff] relative overflow-hidden border-b border-zinc-200/50 text-zinc-900"
+    >
+      {/* Decorative Violet Glow Blur */}
+      <div className="absolute bottom-10 right-10 w-72 h-72 rounded-full bg-violet-400/15 blur-3xl pointer-events-none" />
+
+      <div className="container mx-auto px-4 md:px-6 max-w-[1360px] relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
           <motion.h2
@@ -93,7 +107,7 @@ export function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-5xl font-extrabold tracking-tight"
+            className="text-3xl md:text-5xl font-extrabold tracking-tight text-zinc-900 pb-1"
           >
             Featured Projects
           </motion.h2>
@@ -102,7 +116,7 @@ export function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto"
+            className="text-zinc-500 text-sm md:text-base max-w-2xl mx-auto"
           >
             A showcase of my recent work and creative software solutions
           </motion.p>
@@ -117,7 +131,7 @@ export function Projects() {
               className={`px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold transition-all duration-300 cursor-pointer ${
                 activeCategory === category
                   ? "bg-primary text-primary-foreground shadow-md shadow-primary/25 scale-102"
-                  : "bg-card border border-border text-muted-foreground hover:text-foreground hover:bg-muted/70"
+                  : "bg-white border border-zinc-200 text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50"
               }`}
             >
               {category}
@@ -128,10 +142,10 @@ export function Projects() {
         {/* Projects Grid */}
         <motion.div
           layout
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
         >
           <AnimatePresence mode="popLayout">
-            {filteredProjects.map((project, idx) => (
+            {filteredProjects.map((project) => (
               <motion.div
                 key={project.title}
                 layout
@@ -140,7 +154,7 @@ export function Projects() {
                 exit={{ opacity: 0, scale: 0.9 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4 }}
-                className="bg-card border border-border/80 rounded-3xl overflow-hidden group flex flex-col h-full glow-card shadow-sm"
+                className="bg-white border border-zinc-200/80 rounded-3xl overflow-hidden group flex flex-col h-full shadow-md hover:shadow-lg transition-all duration-300"
               >
                 {/* Project Image */}
                 <div className="relative h-40 overflow-hidden bg-muted">
@@ -182,10 +196,10 @@ export function Projects() {
                       {project.category}
                     </span>
                   </div>
-                  <h3 className="text-base md:text-lg font-bold tracking-tight text-foreground/95 line-clamp-1">
+                  <h3 className="text-base md:text-lg font-bold tracking-tight text-zinc-900 line-clamp-1">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground text-xs leading-relaxed line-clamp-2 flex-grow">
+                  <p className="text-zinc-600 text-xs leading-relaxed line-clamp-2 flex-grow">
                     {project.desc}
                   </p>
                   
@@ -194,7 +208,7 @@ export function Projects() {
                     {project.tags.slice(0, 4).map((tag) => (
                       <span
                         key={tag}
-                        className="px-2 py-0.5 bg-muted border border-border/50 text-muted-foreground text-[10px] rounded-md font-medium"
+                        className="px-2 py-0.5 bg-zinc-50 border border-zinc-200/60 text-zinc-500 text-[10px] rounded-md font-medium"
                       >
                         {tag}
                       </span>
@@ -212,7 +226,7 @@ export function Projects() {
           whileInView={{ opacity: 0.8 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-center mt-12 text-sm text-muted-foreground"
+          className="text-center mt-12 text-sm text-zinc-500"
         >
           More exciting projects under active development! Stay tuned.
         </motion.div>
