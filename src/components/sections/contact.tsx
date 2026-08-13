@@ -97,10 +97,13 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 bg-gradient-to-br from-orange-50/70 via-yellow-50/40 to-orange-50/70 dark:from-zinc-950 dark:via-zinc-900/40 dark:to-zinc-950 bg-grid-pattern relative overflow-hidden"
+      className="py-20 bg-gradient-to-br from-amber-100/40 via-orange-100/20 to-amber-100/40 dark:from-zinc-950 dark:via-zinc-900/60 dark:to-zinc-950 relative overflow-hidden"
     >
+      {/* Grid Pattern Overlay */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-90 dark:opacity-45 pointer-events-none" />
+
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(249,115,22,0.06)_0%,transparent_70%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(249,115,22,0.1)_0%,transparent_70%)] pointer-events-none" />
       <div className="absolute top-20 right-10 w-56 h-56 rounded-full bg-primary/5 blur-3xl floating-element" />
       <div className="absolute bottom-20 left-10 w-44 h-44 rounded-full bg-rose-400/5 blur-3xl floating-element-delayed" />
 
