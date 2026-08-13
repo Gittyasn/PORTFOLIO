@@ -18,22 +18,25 @@ export function Footer() {
   };
 
   return (
-    <footer className="border-t border-border/40 bg-muted/20 py-12 md:py-16">
-      <div className="container mx-auto px-4 md:px-8">
+    <footer className="relative overflow-hidden border-t border-zinc-900 bg-zinc-950 text-zinc-100 py-12 md:py-16">
+      {/* Subtle top spotlight flare */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(244,63,94,0.03)_0%,transparent_50%)] pointer-events-none" />
+      
+      <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* Brand Info */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold tracking-tight bg-gradient-to-r from-primary to-rose-400 bg-clip-text text-transparent">
               Bandaru Yaswanth
             </h3>
-            <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
+            <p className="text-sm text-zinc-400 max-w-xs leading-relaxed">
               Passionate developer dedicated to engineering sleek web experiences and creating high-performance software.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/80">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-zinc-200">
               Quick Links
             </h4>
             <ul className="space-y-2.5 text-sm">
@@ -41,7 +44,7 @@ export function Footer() {
                 <a
                   href="#home"
                   onClick={(e) => handleNavClick(e, "home")}
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-zinc-400 hover:text-primary transition-colors"
                 >
                   Home
                 </a>
@@ -50,7 +53,7 @@ export function Footer() {
                 <a
                   href="#about"
                   onClick={(e) => handleNavClick(e, "about")}
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-zinc-400 hover:text-primary transition-colors"
                 >
                   About Me
                 </a>
@@ -59,7 +62,7 @@ export function Footer() {
                 <a
                   href="#projects"
                   onClick={(e) => handleNavClick(e, "projects")}
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-zinc-400 hover:text-primary transition-colors"
                 >
                   Projects
                 </a>
@@ -68,7 +71,7 @@ export function Footer() {
                 <a
                   href="#education"
                   onClick={(e) => handleNavClick(e, "education")}
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-zinc-400 hover:text-primary transition-colors"
                 >
                   Education
                 </a>
@@ -77,7 +80,7 @@ export function Footer() {
                 <a
                   href="#contact"
                   onClick={(e) => handleNavClick(e, "contact")}
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-zinc-400 hover:text-primary transition-colors"
                 >
                   Contact
                 </a>
@@ -87,10 +90,10 @@ export function Footer() {
 
           {/* Contact Details & Socials */}
           <div className="space-y-4">
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground/80">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-zinc-200">
               Get in Touch
             </h4>
-            <div className="space-y-2 text-sm text-muted-foreground">
+            <div className="space-y-2 text-sm text-zinc-400">
               <a
                 href="mailto:yaswanthbandaruu@gmail.com"
                 className="flex items-center gap-2 hover:text-primary transition-colors"
@@ -110,7 +113,7 @@ export function Footer() {
                 href="https://github.com/Gittyasn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-xl border border-border/40 hover:bg-muted/70 hover:text-primary transition-all duration-350 hover:scale-105"
+                className="p-2.5 rounded-xl border border-zinc-800 bg-zinc-900/50 hover:bg-zinc-900 text-zinc-400 hover:text-primary transition-all duration-350 hover:scale-105"
                 aria-label="GitHub"
               >
                 <Github className="w-4 h-4" />
@@ -119,7 +122,7 @@ export function Footer() {
                 href="https://www.linkedin.com/in/yaswanth-bandaru-98912b"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-xl border border-border/40 hover:bg-muted/70 hover:text-primary transition-all duration-350 hover:scale-105"
+                className="p-2.5 rounded-xl border border-zinc-800 bg-zinc-900/50 hover:bg-zinc-900 text-zinc-400 hover:text-primary transition-all duration-350 hover:scale-105"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
@@ -129,7 +132,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-border/20 flex flex-col sm:flex-row items-center justify-between text-xs text-muted-foreground gap-4">
+        <div className="mt-12 pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-500 gap-4">
           <p>© {currentYear} Bandaru Yaswanth. All rights reserved.</p>
           <p className="flex items-center gap-1.5">
             Designed with <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 animate-pulse" /> using Next.js & Tailwind
