@@ -32,9 +32,10 @@ export function About() {
   return (
     <section
       id="about"
-      className="py-20 bg-transparent relative overflow-hidden"
+      className="py-20 bg-muted/5 bg-grid-pattern relative overflow-hidden border-b border-border/20"
     >
       {/* Decorative Blobs */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(244,63,94,0.06)_0%,transparent_60%)] pointer-events-none" />
       <div className="absolute top-20 right-10 w-52 h-52 rounded-full bg-primary/5 blur-3xl floating-element" />
       <div className="absolute bottom-20 left-10 w-40 h-40 rounded-full bg-rose-400/5 blur-3xl floating-element-delayed" />
 

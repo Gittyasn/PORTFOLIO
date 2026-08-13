@@ -83,8 +83,8 @@ export function Projects() {
   });
 
   return (
-    <section id="projects" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/2 to-transparent pointer-events-none" />
+    <section id="projects" className="py-20 relative overflow-hidden bg-background bg-dot-pattern border-b border-border/20">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(244,63,94,0.06)_0%,transparent_70%)] pointer-events-none" />
       <div className="container mx-auto px-4 md:px-10 max-w-7xl">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">

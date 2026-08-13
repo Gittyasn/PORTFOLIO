@@ -96,9 +96,10 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 relative overflow-hidden bg-transparent"
+      className="py-20 bg-muted/10 bg-grid-pattern relative overflow-hidden"
     >
       {/* Background decoration */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(244,63,94,0.1)_0%,transparent_70%)] pointer-events-none" />
       <div className="absolute top-20 right-10 w-56 h-56 rounded-full bg-primary/5 blur-3xl floating-element" />
       <div className="absolute bottom-20 left-10 w-44 h-44 rounded-full bg-rose-400/5 blur-3xl floating-element-delayed" />
 

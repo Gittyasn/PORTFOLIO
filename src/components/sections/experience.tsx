@@ -37,9 +37,10 @@ export function Experience() {
   return (
     <section
       id="internships"
-      className="py-20 bg-transparent relative overflow-hidden"
+      className="py-20 bg-background bg-dot-pattern relative overflow-hidden border-b border-border/20"
     >
       {/* Decorative Blobs */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(244,63,94,0.06)_0%,transparent_65%)] pointer-events-none" />
       <div className="absolute top-20 left-10 w-44 h-44 rounded-full bg-primary/5 blur-3xl floating-element" />
       <div className="absolute bottom-20 right-10 w-60 h-60 rounded-full bg-rose-400/5 blur-3xl floating-element-delayed" />
 
