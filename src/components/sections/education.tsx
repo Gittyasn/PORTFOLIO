@@ -6,16 +6,18 @@ import { GraduationCap, BookOpen, Award } from "lucide-react";
 
 export function Education() {
   return (
-    <section id="education" className="py-20 bg-muted/5 bg-grid-pattern relative overflow-hidden border-b border-border/20">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(244,63,94,0.05)_0%,transparent_65%)] pointer-events-none" />
-      <div className="container mx-auto px-4 md:px-10 max-w-7xl">
+    <section id="education" className="py-20 bg-gradient-to-br from-[#fdf8ff] via-[#f9f1ff] to-[#f4ebff] relative overflow-hidden border-b border-zinc-200/50 text-zinc-900">
+      {/* Decorative Violet Glow Blur */}
+      <div className="absolute bottom-10 right-10 w-72 h-72 rounded-full bg-violet-400/15 blur-3xl pointer-events-none" />
+      
+      <div className="container mx-auto px-4 md:px-10 max-w-7xl relative z-10">
         {/* Education History */}
         <div className="space-y-4 text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-extrabold tracking-tight text-center"
+            className="text-3xl md:text-5xl font-extrabold tracking-tight text-center bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-poppins pb-1"
           >
             Education History
           </motion.h2>
@@ -24,7 +26,7 @@ export function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto text-center pb-8"
+            className="text-zinc-500 text-sm md:text-base max-w-2xl mx-auto text-center pb-8"
           >
             My academic foundation and educational milestones
           </motion.p>
@@ -37,7 +39,7 @@ export function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="bg-card/70 backdrop-blur-md border border-border/80 p-7 rounded-3xl shadow-sm hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 relative group overflow-hidden"
+            className="bg-white border border-zinc-200/80 p-7 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 relative group overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
             <div className="flex items-center justify-between mb-5">
@@ -48,14 +50,14 @@ export function Education() {
                 <GraduationCap className="w-5 h-5" />
               </div>
             </div>
-            <h4 className="font-extrabold text-lg text-foreground/95 group-hover:text-primary transition-colors duration-300">
+            <h4 className="font-extrabold text-lg text-zinc-900 group-hover:text-primary transition-colors duration-300">
               B.Tech in Computer Science
             </h4>
-            <p className="text-sm text-muted-foreground mt-1.5 leading-relaxed">
+            <p className="text-sm text-zinc-500 mt-1.5 leading-relaxed">
               Baba Institute Of Technology And Sciences
             </p>
-            <div className="mt-6 pt-4 border-t border-border/50 flex items-center justify-between">
-              <span className="text-xs text-muted-foreground font-medium">Result</span>
+            <div className="mt-6 pt-4 border-t border-zinc-100 flex items-center justify-between">
+              <span className="text-xs text-zinc-500 font-medium">Result</span>
               <span className="text-xs font-extrabold text-primary bg-primary/10 px-2.5 py-1 rounded-lg">
                 72.02%
               </span>
@@ -68,7 +70,7 @@ export function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="bg-card/70 backdrop-blur-md border border-border/80 p-7 rounded-3xl shadow-sm hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 relative group overflow-hidden"
+            className="bg-white border border-zinc-200/80 p-7 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 relative group overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
             <div className="flex items-center justify-between mb-5">
@@ -79,14 +81,14 @@ export function Education() {
                 <BookOpen className="w-5 h-5" />
               </div>
             </div>
-            <h4 className="font-extrabold text-lg text-foreground/95 group-hover:text-primary transition-colors duration-300">
+            <h4 className="font-extrabold text-lg text-zinc-900 group-hover:text-primary transition-colors duration-300">
               Intermediate (MPC)
             </h4>
-            <p className="text-sm text-muted-foreground mt-1.5 leading-relaxed">
+            <p className="text-sm text-zinc-500 mt-1.5 leading-relaxed">
               Sri Chaitanya Junior College
             </p>
-            <div className="mt-6 pt-4 border-t border-border/50 flex items-center justify-between">
-              <span className="text-xs text-muted-foreground font-medium">Result</span>
+            <div className="mt-6 pt-4 border-t border-zinc-100 flex items-center justify-between">
+              <span className="text-xs text-zinc-500 font-medium">Result</span>
               <span className="text-xs font-extrabold text-primary bg-primary/10 px-2.5 py-1 rounded-lg">
                 91.02%
               </span>
@@ -99,7 +101,7 @@ export function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="bg-card/70 backdrop-blur-md border border-border/80 p-7 rounded-3xl shadow-sm hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 relative group overflow-hidden"
+            className="bg-white border border-zinc-200/80 p-7 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 relative group overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
             <div className="flex items-center justify-between mb-5">
@@ -110,14 +112,14 @@ export function Education() {
                 <Award className="w-5 h-5" />
               </div>
             </div>
-            <h4 className="font-extrabold text-lg text-foreground/95 group-hover:text-primary transition-colors duration-300">
+            <h4 className="font-extrabold text-lg text-zinc-900 group-hover:text-primary transition-colors duration-300">
               SSC Schooling
             </h4>
-            <p className="text-sm text-muted-foreground mt-1.5 leading-relaxed">
+            <p className="text-sm text-zinc-500 mt-1.5 leading-relaxed">
               Saraswathi Vidya Vihar
             </p>
-            <div className="mt-6 pt-4 border-t border-border/50 flex items-center justify-between">
-              <span className="text-xs text-muted-foreground font-medium">Result</span>
+            <div className="mt-6 pt-4 border-t border-zinc-100 flex items-center justify-between">
+              <span className="text-xs text-zinc-500 font-medium">Result</span>
               <span className="text-xs font-extrabold text-primary bg-primary/10 px-2.5 py-1 rounded-lg">
                 98.00%
               </span>

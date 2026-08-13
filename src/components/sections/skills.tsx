@@ -151,14 +151,12 @@ export function Skills() {
   return (
     <section
       id="skills"
-      className="py-20 bg-background bg-dot-pattern relative overflow-hidden border-b border-border/20"
+      className="py-20 bg-gradient-to-br from-[#fdf8ff] via-[#f9f1ff] to-[#f4ebff] relative overflow-hidden border-b border-zinc-200/50 text-zinc-900"
     >
-      {/* Decorative Blobs */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(244,63,94,0.05)_0%,transparent_65%)] pointer-events-none" />
-      <div className="absolute top-20 right-10 w-44 h-44 rounded-full bg-primary/5 blur-3xl floating-element" />
-      <div className="absolute bottom-20 left-10 w-60 h-60 rounded-full bg-rose-400/5 blur-3xl floating-element-delayed" />
+      {/* Decorative Violet Glow Blur */}
+      <div className="absolute bottom-10 right-10 w-72 h-72 rounded-full bg-violet-400/15 blur-3xl pointer-events-none" />
 
-      <div className="container mx-auto px-4 md:px-10 max-w-7xl">
+      <div className="container mx-auto px-4 md:px-10 max-w-7xl relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
           <motion.h2
@@ -166,7 +164,7 @@ export function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-5xl font-extrabold tracking-tight"
+            className="text-3xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-poppins pb-1"
           >
             Skills & Expertise
           </motion.h2>
@@ -175,7 +173,7 @@ export function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto"
+            className="text-zinc-500 text-sm md:text-base max-w-2xl mx-auto"
           >
             A comprehensive overview of my technical capabilities, languages, tools, and practices
           </motion.p>
@@ -195,11 +193,11 @@ export function Skills() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4 }}
-              className="bg-card border border-border/80 p-5 rounded-2xl text-center shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white border border-zinc-200/80 p-5 rounded-2xl text-center shadow-md hover:shadow-lg transition-all duration-300"
             >
               <div className="text-3xl mb-2">{stat.emoji}</div>
-              <div className="text-foreground text-xl md:text-2xl font-extrabold mb-1">{stat.val}</div>
-              <div className="text-muted-foreground text-[10px] md:text-xs font-semibold uppercase tracking-wider">{stat.label}</div>
+              <div className="text-zinc-900 text-xl md:text-2xl font-extrabold mb-1">{stat.val}</div>
+              <div className="text-zinc-500 text-[10px] md:text-xs font-semibold uppercase tracking-wider">{stat.label}</div>
             </motion.div>
           ))}
         </div>
@@ -215,7 +213,7 @@ export function Skills() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: groupIdx * 0.1 }}
-                className="bg-card border border-border p-6 md:p-8 rounded-3xl shadow-sm glow-card"
+                className="bg-white border border-zinc-200/80 p-6 md:p-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300"
               >
                 <div>
                   {/* Header box style */}
@@ -223,7 +221,7 @@ export function Skills() {
                     <div className={`w-11 h-11 rounded-xl flex items-center justify-center ${group.color} shadow-md`}>
                       <Icon className="w-5 h-5" />
                     </div>
-                    <h3 className="font-extrabold text-base md:text-lg text-foreground/95">
+                    <h3 className="font-extrabold text-base md:text-lg text-zinc-900">
                       {group.title}
                     </h3>
                   </div>
@@ -233,7 +231,7 @@ export function Skills() {
                     {group.skills.map((skill) => (
                       <div
                         key={skill}
-                        className="flex items-center gap-2.5 p-3 md:p-3.5 bg-muted/40 hover:bg-primary/5 border border-border/60 hover:border-primary/20 text-xs md:text-sm font-semibold rounded-2xl text-foreground/80 hover:text-foreground transition-all duration-200 shadow-sm"
+                        className="flex items-center gap-2.5 p-3 md:p-3.5 bg-zinc-50 hover:bg-primary/5 border border-zinc-200/50 hover:border-primary/20 text-xs md:text-sm font-semibold rounded-2xl text-zinc-700 hover:text-zinc-900 transition-all duration-200 shadow-sm"
                       >
                         <div className="flex-shrink-0">
                           {getSkillIcon(skill)}
@@ -249,8 +247,8 @@ export function Skills() {
         </div>
 
         {/* Additional Competencies */}
-        <div className="mt-16 bg-card border border-border p-8 rounded-3xl shadow-sm">
-          <h3 className="font-extrabold text-lg md:text-xl mb-6 text-foreground/95 border-b border-border/60 pb-3">
+        <div className="mt-16 bg-white border border-zinc-200/80 p-8 rounded-3xl shadow-md">
+          <h3 className="font-extrabold text-lg md:text-xl mb-6 text-zinc-900 border-b border-zinc-100 pb-3">
             Additional Competencies & Methodologies
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -261,7 +259,7 @@ export function Skills() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: idx * 0.05 }}
-                className="flex items-center gap-2.5 text-xs md:text-sm text-muted-foreground"
+                className="flex items-center gap-2.5 text-xs md:text-sm text-zinc-600"
               >
                 <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
                 <span className="font-medium leading-relaxed">{skill}</span>
