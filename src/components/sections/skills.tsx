@@ -164,7 +164,7 @@ export function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-poppins pb-1"
+            className="text-3xl md:text-5xl font-extrabold tracking-tight text-zinc-900 pb-1"
           >
             Skills & Expertise
           </motion.h2>

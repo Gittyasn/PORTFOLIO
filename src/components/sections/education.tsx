@@ -17,7 +17,7 @@ export function Education() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-extrabold tracking-tight text-center bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-poppins pb-1"
+            className="text-3xl md:text-5xl font-extrabold tracking-tight text-center text-zinc-900 pb-1"
           >
             Education History
           </motion.h2>
