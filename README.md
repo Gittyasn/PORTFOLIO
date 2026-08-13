@@ -113,7 +113,7 @@ npm start
 
 ---
 
-## 🎨 Customization
+##  Customization
 
 ### 1. Personal Info
 Edit the data inside each section component in `src/components/sections/`:
