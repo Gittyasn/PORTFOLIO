@@ -91,15 +91,13 @@ export function Experience() {
             return (
               <div
                 key={item.company}
-                className={`relative w-full lg:w-1/2 flex flex-col items-start ${
-                  isLeft ? "lg:items-end lg:pr-12 lg:mr-auto" : "lg:items-start lg:pl-12 lg:ml-auto"
-                }`}
+                className={`relative w-full lg:w-1/2 flex flex-col items-start ${isLeft ? "lg:items-end lg:pr-12 lg:mr-auto" : "lg:items-start lg:pl-12 lg:ml-auto"
+                  }`}
               >
                 {/* Timeline node dot positioned relative to page center */}
                 <div
-                  className={`absolute left-4 md:left-6 ${
-                    isLeft ? "lg:left-full" : "lg:left-0"
-                  } -translate-x-1/2 top-7 w-3.5 h-3.5 bg-[#2563eb] rounded-full border-[2.5px] border-white shadow-md z-10`}
+                  className={`absolute left-4 md:left-6 ${isLeft ? "lg:left-full" : "lg:left-0"
+                    } -translate-x-1/2 top-7 w-3.5 h-3.5 bg-[#2563eb] rounded-full border-[2.5px] border-white shadow-md z-10`}
                 />
 
                 {/* Card Container */}

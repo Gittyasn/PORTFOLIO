@@ -174,18 +174,18 @@ export function Hero() {
               <Mail className="w-5 h-5" />
             </a>
           </motion.div>
-        </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.6 }}
-          transition={{ delay: 1.1 }}
-          onClick={handleScrollToAbout}
-          className="absolute bottom-6 flex flex-col items-center space-y-1 text-muted-foreground hover:text-primary cursor-pointer transition-colors"
-        >
-          <span className="text-xs uppercase tracking-widest font-medium">Scroll Down</span>
-          <ChevronDown className="w-4 h-4 animate-bounce" />
+          {/* Scroll indicator - Placed in normal flow directly below social icons */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.6 }}
+            transition={{ delay: 1.1 }}
+            onClick={handleScrollToAbout}
+            className="flex flex-col items-center space-y-1 text-muted-foreground hover:text-primary cursor-pointer transition-colors pt-6"
+          >
+            <span className="text-[10px] uppercase tracking-widest font-semibold">Scroll Down</span>
+            <ChevronDown className="w-4 h-4 animate-bounce" />
+          </motion.div>
         </motion.div>
       </div>
     </section>
