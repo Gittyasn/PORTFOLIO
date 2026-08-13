@@ -53,7 +53,7 @@ export function Experience() {
   return (
     <section
       id="internships"
-      className="py-20 bg-gradient-to-br from-purple-50/50 via-pink-50/30 to-blue-50/50 dark:from-zinc-950 dark:via-zinc-900/40 dark:to-zinc-950 relative overflow-hidden border-b border-border/20"
+      className="py-20 bg-gradient-to-br from-blue-50/60 via-sky-50/30 to-blue-50/60 dark:from-zinc-950 dark:via-zinc-900/40 dark:to-zinc-950 relative overflow-hidden border-b border-border/20"
     >
       {/* Dot Pattern Overlay */}
       <div className="absolute inset-0 bg-dot-pattern opacity-70 pointer-events-none" />
