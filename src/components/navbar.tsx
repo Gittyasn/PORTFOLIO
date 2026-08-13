@@ -54,7 +54,7 @@ export function Navbar() {
             setActiveSection(item.href.substring(1));
           }
         },
-        { threshold: 0.25, rootMargin: "-20% 0px -60% 0px" }
+        { threshold: 0.05, rootMargin: "-30% 0px -30% 0px" }
       );
 
       observer.observe(el);
@@ -72,8 +72,11 @@ export function Navbar() {
     e.preventDefault();
     setMobileMenuOpen(false);
 
+    const sectionId = href.substring(1);
+    setActiveSection(sectionId);
+
     if (pathname === "/" || pathname.startsWith("/#")) {
-      const target = document.getElementById(href.substring(1));
+      const target = document.getElementById(sectionId);
       if (target) {
         target.scrollIntoView({ behavior: "smooth" });
         window.history.pushState(null, "", href);
