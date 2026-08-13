@@ -53,16 +53,8 @@ export function Experience() {
   return (
     <section
       id="internships"
-      className="py-20 bg-gradient-to-br from-blue-50/60 via-sky-50/30 to-blue-50/60 dark:from-zinc-950 dark:via-zinc-900/40 dark:to-zinc-950 relative overflow-hidden border-b border-border/20"
+      className="py-20 bg-gradient-to-br from-[#fcf7ff] via-[#faefff] to-[#f5f0ff] dark:from-[#08070b] dark:via-[#0c0a12] dark:to-[#08070b] relative overflow-hidden border-b border-border/20"
     >
-      {/* Dot Pattern Overlay */}
-      <div className="absolute inset-0 bg-dot-pattern opacity-70 pointer-events-none" />
-
-      {/* Decorative Blobs */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(244,63,94,0.06)_0%,transparent_65%)] pointer-events-none" />
-      <div className="absolute top-20 left-10 w-44 h-44 rounded-full bg-primary/5 blur-3xl floating-element" />
-      <div className="absolute bottom-20 right-10 w-60 h-60 rounded-full bg-rose-400/5 blur-3xl floating-element-delayed" />
-
       <div className="container mx-auto px-4 md:px-10 max-w-7xl relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4">
@@ -100,9 +92,11 @@ export function Experience() {
                   isLeft ? "lg:items-end lg:pr-12 lg:mr-auto" : "lg:items-start lg:pl-12 lg:ml-auto"
                 }`}
               >
-                {/* Timeline node dot */}
+                {/* Timeline node dot positioned relative to page center */}
                 <div
-                  className="absolute left-4 md:left-6 lg:left-1/2 -translate-x-1/2 top-7 w-4 h-4 bg-blue-600 rounded-full border-[3px] border-white dark:border-zinc-950 shadow z-10"
+                  className={`absolute left-4 md:left-6 ${
+                    isLeft ? "lg:left-full" : "lg:left-0"
+                  } -translate-x-1/2 top-7 w-3.5 h-3.5 bg-[#2563eb] rounded-full border-[2.5px] border-zinc-900 dark:border-zinc-100 shadow z-10`}
                 />
 
                 {/* Card Container */}
