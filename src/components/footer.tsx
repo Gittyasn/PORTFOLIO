@@ -111,7 +111,7 @@ export function Footer() {
             <p>© {currentYear} Bandaru Yaswanth. All rights reserved.</p>
             <span className="hidden sm:inline text-zinc-700">•</span>
             <p className="flex items-center gap-1.5">
-              Built with <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 animate-pulse" /> and coffee
+              Built with <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 animate-pulse" />
             </p>
           </div>
         </div>
