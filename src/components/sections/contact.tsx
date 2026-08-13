@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { Github, Linkedin } from "@/components/icons";
 import confetti from "canvas-confetti";
 
 // Schema validation with Zod
@@ -301,6 +302,33 @@ export function Contact() {
                   <h4 className="font-bold text-xs uppercase tracking-wider text-muted-foreground">Location</h4>
                   <p className="text-sm font-semibold text-foreground/90">Visakhapatnam, India</p>
                 </div>
+              </div>
+            </div>
+
+            {/* Connect With Me */}
+            <div className="space-y-4">
+              <h3 className="text-lg md:text-xl font-bold text-foreground/90">
+                Connect With Me
+              </h3>
+              <div className="grid grid-cols-2 gap-4">
+                <a
+                  href="https://github.com/Gittyasn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3 p-4 bg-card border border-border rounded-2xl shadow-sm hover:border-primary/45 transition-colors group"
+                >
+                  <Github className="w-5 h-5 text-zinc-400 group-hover:text-primary transition-colors" />
+                  <span className="font-semibold text-sm text-foreground/80 group-hover:text-foreground transition-colors">GitHub</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/yaswanth-bandaru-98912b"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3 p-4 bg-card border border-border rounded-2xl shadow-sm hover:border-primary/45 transition-colors group"
+                >
+                  <Linkedin className="w-5 h-5 text-zinc-400 group-hover:text-primary transition-colors" />
+                  <span className="font-semibold text-sm text-foreground/80 group-hover:text-foreground transition-colors">LinkedIn</span>
+                </a>
               </div>
             </div>
 
